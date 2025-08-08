@@ -47,12 +47,6 @@
 
 };
 
-&zip_gestures {
-    tap-detection;
-    prevent_movement_during_tap;
-    circular-scroll;
-};
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
