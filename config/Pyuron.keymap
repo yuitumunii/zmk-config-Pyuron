@@ -49,8 +49,6 @@
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp B        &lt 4 COLON           &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT       &kp SLASH
 &kp LCTRL         &kp LEFT_WIN                                  &lt 2 SPACE  &lt 3 INT_MUHENKAN    &kp BACKSPACE  &lt 1 ENTER                    &kp RIGHT_ALT &kp DEL
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_1 {
