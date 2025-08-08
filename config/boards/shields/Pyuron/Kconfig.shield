@@ -1,0 +1,5 @@
+config SHIELD_ORBEE_R
+    def_bool $(shields_list_contains,Pyuron_R)
+
+config SHIELD_ORBEE_L
+    def_bool $(shields_list_contains,Pyuron_L)
