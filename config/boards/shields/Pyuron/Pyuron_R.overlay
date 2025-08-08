@@ -20,7 +20,6 @@
         status = "okay";
         device = <&glidepoint>;
         input-processors = <
-            &zip_gestures
             &zip_absolute_to_relative
             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
             &zip_temp_layer 3 100
@@ -47,12 +46,6 @@
         absolute-mode-clamp-max-y=<1388>;
     };
 
-};
-
-&zip_gestures {
-    tap-detection;
-    prevent_movement_during_tap;
-    circular-scroll;
 };
 
 &pinctrl {
