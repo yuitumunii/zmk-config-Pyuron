@@ -65,7 +65,6 @@
         trackball_split: trackball_split@0 {
             compatible = "zmk,input-split";
             status = "okay";
-            device = <&trackball>;
             reg = <0>;
         };
     };
@@ -74,5 +73,11 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball>;
+    };
+
+    trackball_listener_from_split: trackball_listener_from_split {
+        compatible = "zmk,input-listener";
+        status = "okay";
+        device = <&trackball_split>;
     };
 };
