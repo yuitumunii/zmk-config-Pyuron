@@ -39,7 +39,7 @@
             compatible = "zmk,input-split";
             status = "okay";
             reg = <0>;
-            input = <&trackball2>;
+            device = <&trackball2>;
         };
     };
 
