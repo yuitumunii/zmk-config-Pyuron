@@ -31,10 +31,22 @@
 };
 
 / {
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_split: trackball_split@0 {
+            compatible = "zmk,input-split";
+            status = "okay";
+            reg = <0>;
+            input = <&trackball2>;
+        };
+    };
+
     trackball_listener2 {
         compatible = "zmk,input-listener";
         status = "okay";
-        device = <&trackball2>;
+        device = <&trackball_split>;
 
         scroll {
             layers = <0>;
