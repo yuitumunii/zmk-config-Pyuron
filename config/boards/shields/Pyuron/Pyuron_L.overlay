@@ -32,7 +32,7 @@
 };
 
  / {
-    glidepoint_listener: glidepoint_listener2 {
+    glidepoint_listener2: glidepoint_listener {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&glidepoint2>;
@@ -48,7 +48,7 @@
         };
     };
 
-    trackball_listener: trackball_listener2 {
+    trackball_listener2: trackball_listener {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball2>;
