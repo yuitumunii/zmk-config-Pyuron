@@ -6,14 +6,33 @@
 #include <physical_layouts.dtsi>
 
 / {
-    #address-cells = <1>;
-    #size-cells = <0>;
-
     chosen {
         zmk,physical-layout = &default_layout;
     };
 
-    // キーマトリックス設定
+     split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_split: trackball_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };
+
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&trackball_split>;
+        scroll {
+            layers = <0>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
+                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
+                               <&zip_xy_scaler 1 16>, 
+                               <&zip_xy_to_scroll_mapper>;
+        };
+    };
+
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <11>;
@@ -26,9 +45,10 @@
         >;
     };
 
-    default_layout: default_layout {
+        default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
+
         kscan = <&kscan0>;
         transform = <&default_transform>;
 
@@ -76,110 +96,16 @@
             ;
     };
 
+
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
-        row-gpios
-            = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 			
-            ;
-    };
-
-    // 共通のトラックボール設定
-    trackball: trackball@0 {
-        compatible = "pixart,pmw3610";
-        reg = <0>;
-        spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <800>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        force-awake;
-    };
-
-    // 共通のトラックパッド設定
-    glidepoint: glidepoint@2a {
-        compatible = "cirque,pinnacle";
-        reg = <0x2a>;
-        /* Optional: data ready pin if wired */
-        /* dr-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; */
-    };
-
-    // 入力処理の設定
-    split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
-
-        // 左側からのトラックボール入力をスクロールとして処理
-        trackball_split: trackball_split@0 {
-            compatible = "zmk,input-split";
-            reg = <0>;
-            device = <&trackball>;
-        };
-
-        // 右側のトラックパッド入力をカーソル移動として処理
-        glidepoint_split: glidepoint_split@1 {
-            compatible = "zmk,input-split";
-            reg = <1>;
-            device = <&glidepoint>;
-        };
-    };
-
-    // トラックボール用のスクロールリスナー（左側基本動作）
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&trackball_split>;
-        scroll {
-            layers = <0>;  // レイヤー0でスクロール
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
-                               <&zip_xy_scaler 1 16>, 
-                               <&zip_xy_to_scroll_mapper>;
-        };
-    };
-
-    // トラックボール用のポインターリスナー（左側の代替動作）
-    trackball_pointer_listener: trackball_pointer_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&trackball_split>;
-        pointer {
-            layers = <1>;  // レイヤー1でカーソル移動
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
-                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
-                               <&zip_xy_scaler 1 8>;
-        };
-    };
-
-    // トラックパッド用のポインターリスナー（右側基本動作）
-    glidepoint_pointer_listener: glidepoint_pointer_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&glidepoint_split>;
-        pointer {
-            layers = <0>;  // レイヤー0でカーソル移動
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
-                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
-                               <&zip_xy_scaler 1 12>;
-        };
-    };
-
-    // トラックパッド用のスクロールリスナー（右側の代替動作）
-    glidepoint_scroll_listener: glidepoint_scroll_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&glidepoint_split>;
-        scroll {
-            layers = <1>;  // レイヤー1でスクロール
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
-                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
-                               <&zip_xy_scaler 1 20>, 
-                               <&zip_xy_to_scroll_mapper>;
-        };
+            row-gpios
+                = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+                , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+                , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+                , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 			
+                ;
     };
 };
