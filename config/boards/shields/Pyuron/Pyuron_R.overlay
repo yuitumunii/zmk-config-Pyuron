@@ -6,7 +6,7 @@
 
 &default_transform {
     col-offset = <6>;
-};
+};　
 
 &pinctrl {
     spi0_default: spi0_default {
