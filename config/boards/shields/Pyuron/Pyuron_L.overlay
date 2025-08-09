@@ -67,3 +67,7 @@
 
     };
 };
+
+&peripheral_trackball {
+    device = <&trackball1>;
+};
