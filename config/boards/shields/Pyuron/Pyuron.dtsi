@@ -6,6 +6,9 @@
 #include <physical_layouts.dtsi>
 
 / {
+    #address-cells = <1>;
+    #size-cells = <0>;
+
     chosen {
         zmk,physical-layout = &default_layout;
     };
@@ -17,6 +20,12 @@
         trackball_split: trackball_split@0 {
             compatible = "zmk,input-split";
             reg = <0>;
+        };
+
+        // 右側のトラックパッド入力をカーソル移動として処理
+        glidepoint_split: glidepoint_split@1 {
+            compatible = "zmk,input-split";
+            reg = <1>;
         };
     };
 
@@ -30,6 +39,19 @@
                                <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
                                <&zip_xy_scaler 1 16>, 
                                <&zip_xy_to_scroll_mapper>;
+        };
+    };
+
+    // トラックパッド用のポインターリスナー（右側基本動作）
+    glidepoint_pointer_listener: glidepoint_pointer_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&glidepoint_split>;
+        pointer {
+            layers = <0>;  // レイヤー0でカーソル移動
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
+                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
+                               <&zip_xy_scaler 1 12>;
         };
     };
 
