@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <input/processors.dtsi>
 #include <physical_layouts.dtsi>
+#include <Pyuron_R.overlay>
 
 / {
     chosen {
