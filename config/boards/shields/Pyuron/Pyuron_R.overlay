@@ -106,10 +106,9 @@
                                <&zip_xy_scaler 1 8>;
         };
     };
-};
-
-&trackball_listener {
-    status = "okay";
+    &trackball_listener {
+        status = "okay";
+    };
 };
 
 &glidepoint_pointer_listener {
