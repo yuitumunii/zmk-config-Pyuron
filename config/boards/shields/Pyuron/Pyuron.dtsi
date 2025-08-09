@@ -8,7 +8,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
-        zmk,physical-layout = &Pyuron_physical_layout;
+        zmk,physical-layout = &physical_layout_0;
     };
 
     default_transform: keymap_transform_0 {
