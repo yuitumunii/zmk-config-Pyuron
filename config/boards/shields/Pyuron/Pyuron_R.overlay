@@ -43,6 +43,7 @@
     pinctrl-names = "default", "sleep";
     compatible = "nordic,nrf-spim";
 
+    // 右側のトラックボール設定
     trackball: trackball@0 {
         status = "okay";
         compatible = "pixart,pmw3610";
@@ -57,6 +58,22 @@
     };
 };
 
+&i2c0 {
+    status = "okay";
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+
+    // 右側のトラックパッド設定
+    glidepoint: glidepoint@2a {
+        status = "okay";
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>;
+        /* Optional: data ready pin if wired */
+        /* dr-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; */
+    };
+};
+
 / {
     split_inputs {
         #address-cells = <1>;
@@ -66,16 +83,35 @@
             compatible = "zmk,input-split";
             status = "okay";
             reg = <0>;
+            device = <&trackball>;
+        };
+
+        // 右側のトラックパッド入力をカーソル移動として処理
+        glidepoint_split: glidepoint_split@1 {
+            compatible = "zmk,input-split";
+            status = "okay";
+            reg = <1>;
+            device = <&glidepoint>;
         };
     };
 
     trackball_pointer_listener: trackball_pointer_listener {
         compatible = "zmk,input-listener";
         status = "okay";
-        device = <&trackball>;
+        device = <&trackball_split>;
+        pointer {
+            layers = <1>;  // レイヤー1でカーソル移動
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
+                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
+                               <&zip_xy_scaler 1 8>;
+        };
     };
 };
 
 &trackball_listener {
+    status = "okay";
+};
+
+&glidepoint_pointer_listener {
     status = "okay";
 };
