@@ -1,6 +1,5 @@
 #include "Pyuron.dtsi"
 
-
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
