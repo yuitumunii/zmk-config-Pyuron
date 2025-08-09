@@ -19,6 +19,12 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&glidepoint>;
+};
+
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        status = "okay";
+        device = <&trackball>;
     };
 };
 
@@ -54,13 +60,6 @@
                 <NRF_PSEL(SPIM_MISO, 0, 4)>;
             low-power-enable;
         };
-    };
-};
-
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        status = "okay";
-        device = <&trackball>;
     };
 };
 
