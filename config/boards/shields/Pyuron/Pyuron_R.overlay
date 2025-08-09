@@ -42,19 +42,6 @@
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
     compatible = "nordic,nrf-spim";
-
-    trackball: trackball@0 {
-        status = "okay";
-        compatible = "pixart,pmw3610";
-        reg = <0>;
-        spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <800>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        force-awake;
-    };
 };
 
 / {
@@ -66,16 +53,35 @@
             compatible = "zmk,input-split";
             status = "okay";
             reg = <0>;
+            device = <&trackball>;
+        };
+
+        // 右側のトラックパッド入力をカーソル移動として処理
+        glidepoint_split: glidepoint_split@1 {
+            compatible = "zmk,input-split";
+            status = "okay";
+            reg = <1>;
+            device = <&glidepoint>;
         };
     };
 
     trackball_pointer_listener: trackball_pointer_listener {
         compatible = "zmk,input-listener";
         status = "okay";
-        device = <&trackball>;
+        device = <&trackball_split>;
+        pointer {
+            layers = <1>;  // レイヤー1でカーソル移動
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
+                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
+                               <&zip_xy_scaler 1 8>;
+        };
     };
 };
 
 &trackball_listener {
+    status = "okay";
+};
+
+&glidepoint_pointer_listener {
     status = "okay";
 };
