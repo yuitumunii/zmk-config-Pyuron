@@ -4,21 +4,18 @@
 #include <dt-bindings/zmk/bt.h>
 #include <input/processors.dtsi>
 #include <physical_layouts.dtsi>
-#include <Pyuron_R.overlay>
 
 / {
     chosen {
         zmk,physical-layout = &default_layout;
     };
 
-    split_inputs {
+     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
 
         trackball_split: trackball_split@0 {
             compatible = "zmk,input-split";
-            status = "okay";
-            device = <&trackball>;
             reg = <0>;
         };
     };
