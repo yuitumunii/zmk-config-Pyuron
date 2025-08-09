@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    Pyuron_physical_layout: Pyuron_physical_layout {
+    pyuron_physical_layout: pyuron_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
 
