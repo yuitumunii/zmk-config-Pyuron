@@ -74,5 +74,6 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball_split>;
+        device = <&trackball>;
     };
 };
