@@ -30,22 +30,6 @@
     };
 };
 
-&i2c0 {
-    status = "okay";
-
-    glidepoint2: glidepoint2@2a {
-        compatible = "cirque,pinnacle";
-        reg = <0x2a>;
-        status = "okay";
-        dr-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH)>;
-
-        sensitivity = "2x";
-        // sleep;
-        no-taps;
-    };
-
-};
-
 / {
     trackball: trackball {
         status = "disabled";
