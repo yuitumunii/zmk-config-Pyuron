@@ -110,5 +110,23 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball>;
+        pointer {
+            layers = <0>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
+                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
+                               <&zip_xy_scaler 1 8>;
+        };
+    };
+
+    glidepoint_listener: glidepoint_listener {
+        compatible = "zmk,input-listener";
+        status = "okay";
+        device = <&glidepoint_split>;
+        pointer {
+            layers = <0>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
+                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
+                               <&zip_xy_scaler 1 12>;
+        };
     };
 };
