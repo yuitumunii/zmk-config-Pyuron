@@ -18,35 +18,17 @@
             compatible = "zmk,input-split";
             reg = <0>;
         };
-
-        glidepoint_split: glidepoint_split@1 {
-            compatible = "zmk,input-split";
-            reg = <1>;
-        };
     };
 
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
-        status = "okay";
+        status = "disabled";
         device = <&trackball_split>;
         scroll {
             layers = <0>;
             input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
                                <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
                                <&zip_xy_scaler 1 16>, 
-                               <&zip_xy_to_scroll_mapper>;
-        };
-    };
-
-    glidepoint_listener: glidepoint_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&glidepoint_split>;
-        scroll {
-            layers = <0>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
-                               <&zip_xy_scaler 1 12>, 
                                <&zip_xy_to_scroll_mapper>;
         };
     };
@@ -109,6 +91,24 @@
             , <&key_physical_attrs 100 100  500  300       0     0     0>
             , <&key_physical_attrs 100 100  700  300       0     0     0>
             , <&key_physical_attrs 100 100  800  300       0     0     0>
+            , <&key_physical_attrs 100 100 1100  300       0     0     0>
+            , <&key_physical_attrs 100 100 1200  300       0     0     0>
+            ;
+    };
+
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        label = "KSCAN";
+        diode-direction = "col2row";
+            row-gpios
+                = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+                , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+                , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+                , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 			
+                ;
+    };
+};
             , <&key_physical_attrs 100 100 1100  300       0     0     0>
             , <&key_physical_attrs 100 100 1200  300       0     0     0>
             ;
