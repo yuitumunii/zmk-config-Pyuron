@@ -78,7 +78,7 @@
     pinctrl-1 = <&i2c1_sleep>;
     pinctrl-names = "default", "sleep";
 
-    glidepoint_right: glidepoint_right@2a {
+    glidepoint_right: glidepoint_right@2b {
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
         status = "okay";
@@ -106,27 +106,17 @@
         };
     };
 
-    trackball_listener: trackball_listener {
+    trackball_pointer_listener: trackball_pointer_listener {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball>;
-        pointer {
-            layers = <0>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
-                               <&zip_xy_scaler 1 8>;
-        };
     };
+};
 
-    glidepoint_listener: glidepoint_listener {
-        compatible = "zmk,input-listener";
-        status = "okay";
-        device = <&glidepoint_split>;
-        pointer {
-            layers = <0>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
-                               <&zip_xy_scaler 1 12>;
-        };
-    };
+&trackball_listener {
+    status = "okay";
+};
+
+&glidepoint_listener {
+    status = "okay";
 };
