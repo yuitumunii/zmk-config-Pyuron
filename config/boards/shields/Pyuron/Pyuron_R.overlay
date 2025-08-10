@@ -78,9 +78,9 @@
     pinctrl-1 = <&i2c1_sleep>;
     pinctrl-names = "default", "sleep";
 
-    glidepoint_right: glidepoint_right@2b {
+    glidepoint_right: glidepoint_right@2a {
         compatible = "cirque,pinnacle";
-        reg = <0x2b>;
+        reg = <0x2a>;
         status = "okay";
         dr-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH)>;
         sensitivity = "2x";
@@ -106,17 +106,9 @@
         };
     };
 
-    trackball_pointer_listener: trackball_pointer_listener {
+    trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball>;
     };
-};
-
-&trackball_listener {
-    status = "okay";
-};
-
-&glidepoint_listener {
-    status = "okay";
 };

@@ -64,7 +64,7 @@
         };
     };
 
-    trackball_listener2 {
+    trackball_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackball_split>;
@@ -114,8 +114,4 @@
         dr-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH)>;
         sensitivity = "2x";
     };
-};
-
-&glidepoint_listener {
-    status = "okay";
 };
