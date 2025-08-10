@@ -18,6 +18,11 @@
             compatible = "zmk,input-split";
             reg = <0>;
         };
+
+        glidepoint_split: glidepoint_split@1 {
+            compatible = "zmk,input-split";
+            reg = <1>;
+        };
     };
 
     trackball_listener: trackball_listener {
@@ -29,6 +34,19 @@
             input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
                                <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
                                <&zip_xy_scaler 1 16>, 
+                               <&zip_xy_to_scroll_mapper>;
+        };
+    };
+
+    glidepoint_listener: glidepoint_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&glidepoint_split>;
+        scroll {
+            layers = <0>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
+                               <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
+                               <&zip_xy_scaler 1 12>, 
                                <&zip_xy_to_scroll_mapper>;
         };
     };

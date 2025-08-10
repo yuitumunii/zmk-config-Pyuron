@@ -27,6 +27,21 @@
             low-power-enable;
         };
     };
+
+    i2c0_default: i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SCL, 0, 10)>,
+                    <NRF_PSEL(TWIM_SDA, 0, 16)>;
+        };
+    };
+
+    i2c0_sleep: i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SCL, 0, 10)>,
+                    <NRF_PSEL(TWIM_SDA, 0, 16)>;
+            low-power-enable;
+        };
+    };
 };
 
 / {
@@ -39,6 +54,13 @@
             status = "okay";
             reg = <0>;
             device = <&trackball2>;
+        };
+
+        glidepoint_split: glidepoint_split@1 {
+            compatible = "zmk,input-split";
+            status = "okay";
+            reg = <1>;
+            device = <&glidepoint_left>;
         };
     };
 
@@ -77,4 +99,20 @@
         y-input-code = <INPUT_REL_Y>;
         force-awake;
     };
+};
+
+&i2c0 {
+    status = "okay";
+
+    glidepoint_left: glidepoint_left@2a {
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>;
+        status = "okay";
+        dr-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH)>;
+        sensitivity = "2x";
+    };
+};
+
+&glidepoint_listener {
+    status = "okay";
 };
