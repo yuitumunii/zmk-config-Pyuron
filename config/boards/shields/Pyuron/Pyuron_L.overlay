@@ -64,19 +64,7 @@
         };
     };
 
-    trackball_listener2 {
-        compatible = "zmk,input-listener";
-        status = "okay";
-        device = <&trackball_split>;
 
-        scroll {
-            layers = <0>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-                              <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
-                              <&zip_xy_scaler 1 20>, 
-                              <&zip_xy_to_scroll_mapper>;
-        };
-    };
 };
 
 &spi0 {
@@ -117,5 +105,9 @@
 };
 
 &glidepoint_listener {
+    status = "okay";
+};
+
+&trackball_listener {
     status = "okay";
 };
