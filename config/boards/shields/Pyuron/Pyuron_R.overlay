@@ -96,6 +96,7 @@
             compatible = "zmk,input-split";
             status = "okay";
             reg = <0>;
+            device = <&trackball>;
         };
 
         glidepoint_split: glidepoint_split@1 {
@@ -104,12 +105,6 @@
             reg = <1>;
             device = <&glidepoint_right>;
         };
-    };
-
-    trackball_pointer_listener: trackball_pointer_listener {
-        compatible = "zmk,input-listener";
-        status = "okay";
-        device = <&trackball>;
     };
 };
 
