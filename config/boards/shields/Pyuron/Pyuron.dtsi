@@ -24,7 +24,14 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackball_split>;
+         scroll {
+            layers = <0>;
+            input-processors = <&zip_xy_scaler 1 2>, 
+                               <&zip_xy_to_scroll_mapper>;
+        };
     };
+};
+
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
