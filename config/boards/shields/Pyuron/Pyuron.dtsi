@@ -13,6 +13,7 @@
     trackball_split: trackball_split {
         compatible = "zmk,input-split";
         status = "okay";
+        reg = <0>;
     };
 
 
