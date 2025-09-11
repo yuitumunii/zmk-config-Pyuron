@@ -30,7 +30,6 @@
                                <&zip_xy_to_scroll_mapper>;
         };
     };
-};
 
 
     default_transform: keymap_transform_0 {
