@@ -49,7 +49,7 @@
 
         scroll {
             layers = <0>;
-            input-processors = <&zip_xy_scaler 1 10>, 
+            input-processors = <&zip_xy_scaler 1 5>, 
                                <&zip_xy_to_scroll_mapper>;
         };
     };
