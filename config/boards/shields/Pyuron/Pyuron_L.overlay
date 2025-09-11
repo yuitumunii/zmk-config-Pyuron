@@ -42,18 +42,14 @@
         };
     };
 
-    trackball_listener2 {
+    trackball_listener2: trackball_listener2 {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball2>;
-
-        scroll {
-            layers = <0>;
             input-processors = <&zip_xy_scaler 1 2>, 
                                <&zip_xy_to_scroll_mapper>;
         };
     };
-};
 
 &spi0 {
     status = "okay";
