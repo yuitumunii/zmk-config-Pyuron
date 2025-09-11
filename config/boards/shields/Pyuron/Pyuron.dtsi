@@ -26,7 +26,8 @@ split_inputs {
       status = "disabled";
       device = <&trackball_split_L>;
 
-        input-processors = <&zip_xy_scaler 1 2>, 
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
+                           <&zip_xy_scaler 1 3>,
                            <&zip_xy_to_scroll_mapper>;
     };
 
