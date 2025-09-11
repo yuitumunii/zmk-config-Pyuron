@@ -24,7 +24,7 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackball_split>;
-        };
+
     };
 
     default_transform: keymap_transform_0 {
