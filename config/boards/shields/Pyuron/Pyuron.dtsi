@@ -12,13 +12,7 @@
 
     trackball_split: trackball_split {
         compatible = "zmk,input-split";
-        status = "disabled";
-    };
-
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&trackball_split>;
+        status = "okay";
     };
 
 
