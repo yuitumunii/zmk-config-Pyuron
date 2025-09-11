@@ -33,20 +33,6 @@
     };
 };
 
-/ {
-    trackball_scroller: trackball_listener {
-        compatible = "zmk,input-listener";
-        status = "okay";
-        device = <&trackball2>;
-
-        scroll {
-            layers = <0>;
-            input-processors = <&zip_xy_scaler 1 2>, 
-                               <&zip_xy_to_scroll_mapper>;
-        };
-    };
-};
-
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
@@ -55,7 +41,7 @@
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
-    trackball2: trackball2@0 {
+    trackball_L: trackball_L@0 {
         status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
@@ -67,4 +53,8 @@
         y-input-code = <INPUT_REL_Y>;
         force-awake;
     };
+};
+
+&trackball_split_L {
+    device = <&trackball_L>;
 };

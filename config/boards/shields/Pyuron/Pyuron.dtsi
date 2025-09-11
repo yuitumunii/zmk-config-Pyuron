@@ -9,12 +9,33 @@
     chosen {
         zmk,physical-layout = &default_layout;
     };
+    
+//trackball settings  
+split_inputs {
+      #address-cells = <1>;
+      #size-cells = <0>;
 
-    trackball_split: trackball_split {
+      trackball_split_L: trackball_split_L@0 {
         compatible = "zmk,input-split";
-        status = "okay";
         reg = <0>;
+      };
     };
+
+    trackball_listener_L: trackball_listener_L {
+      compatible = "zmk,input-listener";
+      status = "disabled";
+      device = <&trackball_split_L>;
+
+        input-processors = <&zip_xy_scaler 1 2>, 
+                           <&zip_xy_to_scroll_mapper>;
+    };
+
+    trackball_listener_R: trackball_listener_R {
+      compatible = "zmk,input-listener";
+      status = "disabled";    
+    };
+};
+
 
 
     default_transform: keymap_transform_0 {
