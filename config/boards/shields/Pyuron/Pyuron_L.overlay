@@ -46,10 +46,13 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball2>;
-            input-processors = <&zip_xy_scaler 1 2>, 
+        scroll {
+            layers = <0>;
+            input-processors = <&zip_xy_scaler 1 1>, 
                                <&zip_xy_to_scroll_mapper>;
         };
     };
+};
 
 &spi0 {
     status = "okay";
