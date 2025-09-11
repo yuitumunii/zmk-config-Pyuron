@@ -9,7 +9,7 @@
     chosen {
         zmk,physical-layout = &default_layout;
     };
-    
+
 //trackball settings  
 split_inputs {
       #address-cells = <1>;
@@ -34,9 +34,6 @@ split_inputs {
       compatible = "zmk,input-listener";
       status = "disabled";    
     };
-};
-
-
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
