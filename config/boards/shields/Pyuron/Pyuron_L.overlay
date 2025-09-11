@@ -46,10 +46,11 @@
         };
     };
 
-    trackball_listener2 {
+    trackball_scroller: trackball_listener {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball2>;
+
         scroll {
             layers = <0>;
             input-processors = <&zip_xy_scaler 1 2>, 

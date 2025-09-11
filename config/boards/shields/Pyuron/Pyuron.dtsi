@@ -10,25 +10,15 @@
         zmk,physical-layout = &default_layout;
     };
 
-     split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
-
-        trackball_split: trackball_split@0 {
-            compatible = "zmk,input-split";
-            reg = <0>;
-        };
+    trackball_split: trackball_split {
+        compatible = "zmk,input-split";
+        status = "disabled";
     };
 
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackball_split>;
-         scroll {
-            layers = <0>;
-            input-processors = <&zip_xy_scaler 1 2>, 
-                               <&zip_xy_to_scroll_mapper>;
-        };
     };
 
 
