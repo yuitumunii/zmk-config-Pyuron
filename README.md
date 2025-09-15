@@ -1,6 +1,12 @@
 # ファームウェア更新手順とキーマップの編集
 
-## キーマップの編集 (Githubアカウントが必要になります)
+## ZMK Studioによるキーマップの編集
+### 手順1. 有線接続でキーマップを変更する場合は[ZMK Studio](https://zmk.studio/)にアクセス
+### 手順2. 中央にある"USB"をクリックしてデバイスを選択することでキーマップの編集が可能になります。
+### 手順3. 無線接続でキーマップを変更する場合は[ZMK Studioネイティブアプリ](https://zmk.studio/download)にアクセスしてファイルをダウンロード
+### 手順4. インストール後に起動、接続中のデバイスが表示されるのでデバイスを選択するとキーマップの編集が可能になります。
+
+## Keymap-Editorによるキーマップの編集 (Githubアカウントが必要になります)
 ### 手順1. [Pyuronリポジトリ](https://github.com/MeowCatpawkittie/zmk-config-Pyuron) リポジトリをFork
 ### 手順2. Actionsタブを選択して"I understand my workflows, go ahead and enable them"をクリック
 ### 手順3. [Keymap-Editor](https://nickcoutsos.github.io/keymap-editor/)にアクセス
