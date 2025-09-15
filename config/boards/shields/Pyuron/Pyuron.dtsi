@@ -48,7 +48,7 @@ split_inputs {
                 , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 			
                 ;
     };
-    
+
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <11>;
@@ -111,6 +111,4 @@ split_inputs {
             , <&key_physical_attrs 100 100 1200  300       0     0     0>
             ;
     };
-
-
 };
