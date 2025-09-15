@@ -1,3 +1,4 @@
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include "Pyuron.dtsi"
 
 &kscan0 {
@@ -11,7 +12,7 @@
 };
 
 &pinctrl {
-    spi0_default: spi0_default {
+    spi1_default: spi1_default {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
                     <NRF_PSEL(SPIM_MOSI, 0, 4)>,
@@ -19,7 +20,7 @@
         };
     };
 
-    spi0_sleep: spi0_sleep {
+    spi1_sleep: spi1_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
                     <NRF_PSEL(SPIM_MOSI, 0, 4)>,
@@ -29,43 +30,19 @@
     };
 };
 
-/ {
-    split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
-
-        trackball_split: trackball_split@0 {
-            compatible = "zmk,input-split";
-            status = "okay";
-            reg = <0>;
-            device = <&trackball2>;
-        };
-    };
-
-    trackball_listener2 {
-        compatible = "zmk,input-listener";
-        status = "okay";
-        device = <&trackball2>;
-
-        scroll {
-            layers = <0>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-                              <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, 
-                              <&zip_xy_scaler 1 20>, 
-                              <&zip_xy_to_scroll_mapper>;
-        };
-    };
+&trackball_split_L {
+    device = <&trackball_L>;
 };
 
-&spi0 {
+&spi1 {
     status = "okay";
     compatible = "nordic,nrf-spim";
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-0 = <&spi1_default>;
+    pinctrl-1 = <&spi1_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
-    trackball2: trackball2@0 {
+    trackball_L: trackball_L@0 {
         status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
