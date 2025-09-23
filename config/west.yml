@@ -4,7 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: MeowCatpawkittie
       url-base: https://github.com/MeowCatpawkittie
-    - name: caksoylar  # <-- new entry
+    - name: caksoylar
       url-base: https://github.com/caksoylar  
     - name: badjeff
       url-base: https://github.com/badjeff
@@ -15,9 +15,6 @@ manifest:
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
-      revision: main
-    - name: cirque-input-module
-      remote: MeowCatpawkittie
       revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
