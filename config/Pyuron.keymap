@@ -27,6 +27,22 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        paste_reserch: paste_reserch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LG(C)>,
+                <&macro_wait_time 200>,
+                <&kp LG(T)>,
+                <&macro_wait_time 200>,
+                <&kp LG(V)>,
+                <&macro_wait_time 200>,
+                <&kp ENTER>;
+
+            label = "PASTE_RESERCH";
+        };
     };
 
     lt_to_layer_0: lt_to_layer_0 {
