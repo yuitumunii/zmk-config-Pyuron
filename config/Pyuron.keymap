@@ -97,10 +97,10 @@
 
         layer_4 {
             bindings = <
-&trans                &trans             &trans  &trans  &trans  &kp LG(R)      &kp LG(C)     &kp LG(T)         &kp LG(V)             &paste_reserch
-&trans                &trans             &trans  &trans  &trans  &kp LESS_THAN  &msc SCRL_UP  &kp GREATER_THAN  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP
-&trans                &trans             &trans  &trans  &trans  &trans         &trans        &msc SCRL_LEFT    &msc SCRL_DOWN        &msc SCRL_RIGHT
-&kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans         &trans        &trans            &trans                &trans
+&trans                &trans             &trans  &trans  &trans  &kp LG(C)     &kp LG(V)  &kp LG(T)       &kp LG(R)             &paste_reserch
+&trans                &trans             &trans  &trans  &trans  &msc SCRL_UP  &kp LG(W)  &kp LC(Z)       &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP
+&trans                &trans             &trans  &trans  &trans  &trans        &trans     &msc SCRL_DOWN  &kp LESS_THAN         &kp GREATER_THAN
+&kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans        &trans     &trans          &trans                &trans
             >;
         };
 
