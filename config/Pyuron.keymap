@@ -90,7 +90,7 @@
             bindings = <
 &trans         &trans      &trans  &trans  &trans  &kp LC(UP_ARROW)        &kp LC(LEFT)        &kp UP_ARROW  &kp LC(RIGHT)  &kp LS(LC(SPACE))
 &trans         &trans      &trans  &trans  &trans  &kp LA(LG(LEFT_ARROW))  &kp LEFT            &kp DOWN      &kp RIGHT      &kp LA(LG(RIGHT_ARROW))
-&trans         &trans      &trans  &trans  &trans  &trans                  &kp LC(DOWN_ARROW)  &kp C_PREV    &kp LG(LEFT)   &kp F8
+&trans         &trans      &trans  &trans  &trans  &trans                  &kp LC(DOWN_ARROW)  &kp C_PREV    &kp LG(LEFT)   &kp K_PLAY_PAUSE
 &kp LG(RIGHT)  &kp C_NEXT  &trans  &trans  &trans  &trans                  &trans              &trans        &trans         &kp LG(DELETE)
             >;
         };
