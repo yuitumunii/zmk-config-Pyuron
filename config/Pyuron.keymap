@@ -62,8 +62,8 @@
             bindings = <
 &mt ESC Q           &kp W        &kp E           &kp R         &kp T                       &kp Y        &kp U        &kp I            &kp O          &kp P
 &mt LEFT_CONTROL A  &kp S        &kp D           &kp F         &kp G                       &kp H        &kp J        &kp K            &kp L          &kp MINUS
-&mt LEFT_SHIFT Z    &kp X        &kp C           &kp V         &kp B                       &lt 2 TAB    &lt 2 B      &kp N            &kp M          &mkp LCLK
-&mkp RCLK           &lt 1 ENTER  &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_COMMAND LG(SPACE)  &lt 1 SPACE  &lt 3 SPACE  &lt 4 BACKSPACE  &kp RIGHT_GUI  &lt 5 ESCAPE
+&mt LEFT_SHIFT Z    &kp X        &kp C           &kp V         &kp B                       &lt 2 TAB    &lt 2 B      &kp N            &kp M          &kp COMMA
+&kp PERIOD          &lt 1 ENTER  &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_COMMAND LG(SPACE)  &lt 1 SPACE  &lt 3 SPACE  &lt 4 BACKSPACE  &kp RIGHT_GUI  &lt 5 ESCAPE
             >;
         };
 
@@ -113,12 +113,12 @@
         };
 
         // AutoMouse layer: auto-activated by right trackball movement
-        // pos6=MB3, pos15=MB1, pos16=MB2, pos17=mo SCROLL
+        // pos8=MB3(O), pos17=MB1(K), pos18=MB2(L), pos19=mo SCROLL(MINUS)
         layer_6 {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB3  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &mo 7   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &mo 7
 &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans
 &trans  &trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &to 0  &to 0  &trans  &kp RIGHT_GUI  &kp RIGHT_ALT
             >;

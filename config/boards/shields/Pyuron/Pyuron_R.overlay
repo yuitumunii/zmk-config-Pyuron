@@ -40,7 +40,7 @@
 // exit after 5s idle. Keys 6/15/16 (MB3/MB1/MB2) don't reset the timer.
 &zip_temp_layer {
     require-prior-idle-ms = <350>;
-    excluded-positions = <6 15 16>;
+    excluded-positions = <8 17 18 19>;
 };
 
 &trackball_listener_R {
