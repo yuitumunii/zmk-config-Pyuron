@@ -71,8 +71,8 @@
             bindings = <
 &kp GRAVE     &kp LS(NUMBER_1)      &kp LS(NUMBER_2)      &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N9)     &kp LS(N0)     &kp BACKSLASH     &kp PLUS           &kp EQUAL
 &kp RC(TAB)   &kp LS(N5)            &kp LS(NUMBER_6)      &kp LS(N7)        &kp LS(N8)        &kp SEMICOLON  &kp SQT        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(GRAVE)
-&trans        &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))    &none             &trans         &kp LESS_THAN  &kp GREATER_THAN  &kp COMMA          &kp PERIOD
-&kp QUESTION  &trans                &trans                &trans            &trans            &trans         &trans         &trans            &kp FSLH           &kp LG(BACKSPACE)
+&trans        &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))    &none             &trans         &kp LESS_THAN  &kp GREATER_THAN  &kp COMMA          &kp SLASH
+&kp QUESTION  &trans                &trans                &trans            &trans            &trans         &trans         &trans            &trans             &kp LG(BACKSPACE)
             >;
         };
 
@@ -114,17 +114,19 @@
 
         // AutoMouse layer: auto-activated by right trackball movement
         // pos8=MB3(O), pos17=MB1(K), pos18=MB2(L), pos19=mo SCROLL(MINUS)
+
         layer_6 {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &mo 7
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans
-&trans  &trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &to 0  &to 0  &trans  &kp RIGHT_GUI  &kp RIGHT_ALT
+&trans  &trans  &trans          &trans        &trans        &trans  &trans  &trans    &mkp MB3       &trans
+&trans  &trans  &trans          &trans        &trans        &trans  &trans  &mkp MB1  &mkp MB2       &mo 7
+&trans  &trans  &trans          &trans        &trans        &trans  &trans  &trans    &trans         &trans
+&trans  &trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &to 0   &to 0   &trans    &kp RIGHT_GUI  &kp RIGHT_ALT
             >;
         };
 
         // Scroll layer: right trackball becomes scroll wheel while this layer is active
+
         layer_7 {
             label = "SCROLL";
             bindings = <
