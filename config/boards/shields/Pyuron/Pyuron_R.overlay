@@ -36,9 +36,28 @@
     status = "okay";
 };
 
+// zip_temp_layer: activate MOUSE layer (6) on trackball move,
+// exit after 5s idle. Keys 6/15/16 (MB3/MB1/MB2) don't reset the timer.
+&zip_temp_layer {
+    require-prior-idle-ms = <350>;
+    excluded-positions = <6 15 16>;
+};
+
 &trackball_listener_R {
     status = "okay";
     device = <&trackball_R>;
+
+    // Normal: cursor movement + auto-activate MOUSE layer
+    input-processors = <&zip_temp_layer 6 5000>;
+
+    // Scroll mode: when SCROLL layer (7) is active, right trackball scrolls
+    scroller {
+        layers = <7>;
+        input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_scaler 1 20>;
+    };
 };
 
 &spi0 {
