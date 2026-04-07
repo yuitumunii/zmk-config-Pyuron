@@ -49,14 +49,6 @@
 
     // Normal: cursor movement + auto-activate MOUSE layer
     input-processors = <&zip_temp_layer 6 5000>;
-
-    // Scroll mode: when SCROLL layer (7) is active, right trackball scrolls
-    scroller {
-        layers = <7>;
-        input-processors =
-            <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_scaler 1 20>;
-    };
 };
 
 &spi0 {

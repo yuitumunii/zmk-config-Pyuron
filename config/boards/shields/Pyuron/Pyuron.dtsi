@@ -38,7 +38,14 @@ split_inputs {
 
     trackball_listener_R: trackball_listener_R {
       compatible = "zmk,input-listener";
-      status = "disabled";    
+      status = "disabled";
+
+      scroller {
+        layers = <7>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
+                           <&zip_xy_to_scroll_mapper>,
+                           <&zip_scroll_scaler 1 20>;
+      };
     };
 
     kscan0: kscan {
