@@ -48,7 +48,7 @@
     device = <&trackball_R>;
 
     // Normal: cursor movement + auto-activate MOUSE layer
-    input-processors = <&zip_temp_layer 6 5000>;
+    input-processors = <&zip_temp_layer 6 500>;
 };
 
 &spi0 {
