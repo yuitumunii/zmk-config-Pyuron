@@ -147,8 +147,8 @@
         layer_7 {
             label = "SCROLL";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp RIGHT_GUI     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp LEFT_CONTROL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp LEFT_GUI      &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans            &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &trans            &trans
             >;
