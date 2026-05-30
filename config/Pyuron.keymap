@@ -131,6 +131,7 @@
 
         // AutoMouse layer: auto-activated by right trackball movement
         // pos8=MB3(O), pos17=MB1(K), pos18=MB2(L), pos19=mo SCROLL(MINUS)
+        // NOTE: zip_temp_layer active中の &to は固着トリガーになりやすいため置かない
 
         layer_6 {
             label = "MOUSE";
@@ -138,7 +139,7 @@
 &trans  &trans  &trans          &trans        &trans        &trans  &trans  &trans    &mkp MB3       &trans
 &trans  &trans  &trans          &trans        &trans        &trans  &trans  &mkp MB1  &mkp MB2       &mo 7
 &trans  &trans  &trans          &trans        &trans        &trans  &trans  &trans    &trans         &trans
-&trans  &trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &to 0   &to 0   &trans    &kp RIGHT_GUI  &kp RIGHT_ALT
+&trans  &trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans    &kp RIGHT_GUI  &kp RIGHT_ALT
             >;
         };
 

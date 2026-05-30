@@ -36,10 +36,11 @@
     status = "okay";
 };
 
-// zip_temp_layer: activate MOUSE layer (6) on trackball move,
-// exit after 5s idle. Keys 6/15/16 (MB3/MB1/MB2) don't reset the timer.
+// zip_temp_layer: activate MOUSE layer (6) on trackball move.
+// NOTE: timeout param is milliseconds. "500" means 0.5s.
+// 固着時の切り分けのため、誤発火を減らして滞在時間を伸ばす。
 &zip_temp_layer {
-    require-prior-idle-ms = <350>;
+    require-prior-idle-ms = <700>;
     excluded-positions = <8 17 18>;
 };
 
@@ -48,7 +49,7 @@
     device = <&trackball_R>;
 
     // Normal: cursor movement + auto-activate MOUSE layer
-    input-processors = <&zip_temp_layer 6 500>;
+    input-processors = <&zip_temp_layer 6 1200>;
 };
 
 &spi0 {
