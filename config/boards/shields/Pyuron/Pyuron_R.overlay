@@ -67,13 +67,10 @@
         input-processors = <&zip_keybind_3finger>;
     };
 
-    // Override layer 7 (hyphen-hold SCROLL): was full 2D scroll.
-    // Now: left/right = browser back/forward keys, up/down = scroll.
-    // Same child name "scroller" as Pyuron.dtsi -> overrides its processors.
-    scroller {
-        layers = <7>;
-        input-processors = <&zip_scroll_nav>;
-    };
+    // Layer 7 (hyphen-hold) uses the native smooth 2D scroller defined in
+    // Pyuron.dtsi (no override here). Ball motion maps proportionally to wheel
+    // scroll (trackpad-like), Ctrl+scroll zoom works, no cursor leak.
+    // left/right = horizontal scroll (no back/forward — smooth-scroll priority).
 };
 
 / {
@@ -94,22 +91,6 @@
         tick = <120>;
         tap-ms = <10>;
         wait-ms = <400>;
-    };
-
-    // Hyphen-hold (layer 7): left/right = back/forward, up/down = scroll.
-    // Only the dominant axis fires per tick, so vertical scrolling rarely
-    // triggers an accidental left/right navigation.
-    // tick is smaller than the gestures so scrolling stays responsive.
-    zip_scroll_nav: zip_scroll_nav {
-        compatible = "zmk,input-processor-keybind";
-        #input-processor-cells = <0>;
-        track_remainders;
-        // [RIGHT=forward Cmd+], LEFT=back Cmd+[, DOWN=scroll down, UP=scroll up]
-        bindings = <&kp LG(RBKT)>, <&kp LG(LBKT)>, <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        mode = <1>;
-        tick = <25>;
-        tap-ms = <5>;
-        wait-ms = <0>;
     };
 };
 
