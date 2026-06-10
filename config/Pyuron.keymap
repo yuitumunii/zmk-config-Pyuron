@@ -5,6 +5,8 @@
 
 #define MOUSE 6
 #define SCROLL 7
+#define GEST2 8
+#define GEST3 9
 
 &mt {
     flavor = "balanced";
@@ -77,7 +79,7 @@
 
         default_layer {
             bindings = <
-&mt ESC Q           &kp W        &kp E               &kp R         &kp T                       &kp Y        &kp U        &kp I            &kp O          &kp P
+&mt ESC Q           &kp W        &kp E               &kp R         &kp T                       &kp Y        &kp U        &kp I            &lt GEST3 O    &lt GEST2 P
 &mt LEFT_CONTROL A  &kp S        &kp D               &kp F         &kp G                       &kp H        &kp J        &kp K            &kp L          &lt 7 MINUS
 &mt LEFT_SHIFT Z    &kp X        &kp C               &kp V         &kp B                       &lt 2 TAB    &lt 2 B      &kp N            &kp M          &kp COMMA
 &kp PERIOD          &lt 1 ENTER  &mt LEFT_SHIFT TAB  &kp LEFT_ALT  &mt LEFT_COMMAND LG(SPACE)  &lt 1 SPACE  &lt 3 SPACE  &lt 4 BACKSPACE  &kp RIGHT_GUI  &lt 5 ESCAPE
@@ -152,6 +154,33 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp LEFT_GUI      &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans            &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &trans            &trans
+            >;
+        };
+
+        // Gesture layers: enabled only while the hold-tap key (default layer pos9/pos8)
+        // is held. The right trackball's input is converted to direction shortcuts by the
+        // keybind input processor (see Pyuron_R.overlay). Keys stay &trans so the rest of
+        // the keymap remains usable; the layer just acts as a flag for the processor.
+
+        // GEST2 (8): 2-finger style — browser / tab navigation
+        layer_8 {
+            label = "GEST2";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        // GEST3 (9): 3-finger style — desktop / Mission Control
+        layer_9 {
+            label = "GEST3";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
