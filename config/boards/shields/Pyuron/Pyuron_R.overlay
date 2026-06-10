@@ -85,12 +85,14 @@
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         track_remainders;
-        // [RIGHT=next desktop, LEFT=prev desktop, DOWN=Show Desktop(F11), UP=Mission Control]
-        bindings = <&kp LC(RIGHT)>, <&kp LC(LEFT)>, <&kp F11>, <&kp LC(UP)>;
+        // [RIGHT=prev desktop, LEFT=next desktop, DOWN=Show Desktop(F11), UP=Mission Control]
+        // (ball RIGHT/LEFT swapped so physical direction matches desktop move)
+        bindings = <&kp LC(LEFT)>, <&kp LC(RIGHT)>, <&kp F11>, <&kp LC(UP)>;
         mode = <1>;
-        tick = <120>;
+        // sensitivity lowered: bigger swing needed (tick 120→180), slower repeat (wait 400→600)
+        tick = <180>;
         tap-ms = <10>;
-        wait-ms = <400>;
+        wait-ms = <600>;
     };
 };
 
