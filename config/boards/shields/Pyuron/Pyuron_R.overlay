@@ -48,8 +48,8 @@
 // 固着時の切り分けのため、誤発火を減らして滞在時間を伸ばす。
 &zip_temp_layer {
     require-prior-idle-ms = <700>;
-    // 8 = GEST3 key, 9 = GEST2 key (don't auto-fire MOUSE layer while gesturing)
-    excluded-positions = <8 9 17 18>;
+    // 9 = GEST3 key (P, don't auto-fire MOUSE layer while gesturing)
+    excluded-positions = <9 17 18>;
 };
 
 &trackball_listener_R {
@@ -62,13 +62,8 @@
     // Gesture overrides: active only while the gesture layer is held.
     // While active, the base processors above are skipped and trackball
     // direction is quantized into the shortcut keypresses below.
-    gest2 {
-        layers = <8>;                                // GEST2 (2-finger / browser)
-        input-processors = <&zip_keybind_2finger>;
-    };
-
     gest3 {
-        layers = <9>;                                // GEST3 (3-finger / desktop)
+        layers = <8>;                                // GEST3 (3-finger / desktop)
         input-processors = <&zip_keybind_3finger>;
     };
 
@@ -89,24 +84,12 @@
     //  last two entries if a flick feels reversed on the real board.)
     // tick: higher = needs a bigger flick (fewer misfires). wait-ms: gap between fires.
 
-    zip_keybind_2finger: zip_keybind_2finger {
-        compatible = "zmk,input-processor-keybind";
-        #input-processor-cells = <0>;
-        track_remainders;
-        // [RIGHT=forward, LEFT=back, DOWN=next tab, UP=prev tab]
-        bindings = <&kp LG(RBKT)>, <&kp LG(LBKT)>, <&kp LC(TAB)>, <&kp LC(LS(TAB))>;
-        mode = <1>;
-        tick = <60>;
-        tap-ms = <10>;
-        wait-ms = <300>;
-    };
-
     zip_keybind_3finger: zip_keybind_3finger {
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         track_remainders;
-        // [RIGHT=next desktop, LEFT=prev desktop, DOWN=App Expose, UP=Mission Control]
-        bindings = <&kp LC(RIGHT)>, <&kp LC(LEFT)>, <&kp LC(DOWN)>, <&kp LC(UP)>;
+        // [RIGHT=next desktop, LEFT=prev desktop, DOWN=前アプリ(⌘Tab), UP=Mission Control]
+        bindings = <&kp LC(RIGHT)>, <&kp LC(LEFT)>, <&kp LG(TAB)>, <&kp LC(UP)>;
         mode = <1>;
         tick = <60>;
         tap-ms = <10>;
