@@ -67,6 +67,11 @@
         input-processors = <&zip_keybind_3finger>;
     };
 
+    pagenav {
+        layers = <9>;                                // GEST_PAGE (O-hold / browser page+tab)
+        input-processors = <&zip_keybind_pagenav>;
+    };
+
     // Layer 7 (hyphen-hold) uses the native smooth 2D scroller defined in
     // Pyuron.dtsi (no override here). Ball motion maps proportionally to wheel
     // scroll (trackpad-like), Ctrl+scroll zoom works, no cursor leak.
@@ -90,6 +95,19 @@
         bindings = <&kp LC(LEFT)>, <&kp LC(RIGHT)>, <&kp F11>, <&kp LC(UP)>;
         mode = <1>;
         // sensitivity lowered: bigger swing needed (tick 120→180), slower repeat (wait 400→600)
+        tick = <180>;
+        tap-ms = <10>;
+        wait-ms = <600>;
+    };
+
+    // O-hold browser gesture: left/right = page back/forward, up/down = tab switch.
+    // [RIGHT=page forward(Cmd+]), LEFT=page back(Cmd+[), DOWN=prev tab(Ctrl+Shift+Tab), UP=next tab(Ctrl+Tab)]
+    zip_keybind_pagenav: zip_keybind_pagenav {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        track_remainders;
+        bindings = <&kp LG(RBKT)>, <&kp LG(LBKT)>, <&kp LC(LS(TAB))>, <&kp LC(TAB)>;
+        mode = <1>;
         tick = <180>;
         tap-ms = <10>;
         wait-ms = <600>;
