@@ -10,10 +10,15 @@ manifest:
       url-base: https://github.com/badjeff
     - name: zettaface
       url-base: https://github.com/zettaface
+    - name: yuitumunii
+      url-base: https://github.com/yuitumunii
   projects:
+    # 自前fork: 最新本家ZMK + 1行修正(filter_with_input_config が
+    # レイヤーオーバーライドのSTOPを尊重 → トラックボールのカーソル漏れ解消)。
+    # 将来ZMK更新時はこのbranchに本家を取り込み直し1行を再適用する。
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: yuitumunii
+      revision: pyuron-input-stop-fix
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff

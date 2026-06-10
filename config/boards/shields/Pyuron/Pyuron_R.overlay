@@ -48,8 +48,8 @@
 // 固着時の切り分けのため、誤発火を減らして滞在時間を伸ばす。
 &zip_temp_layer {
     require-prior-idle-ms = <700>;
-    // 9 = GEST3 key (P, don't auto-fire MOUSE layer while gesturing)
-    excluded-positions = <9 17 18>;
+    // 8=O(MOUSE層MB3/ズームCtrl), 9=P(GEST3) を除外
+    excluded-positions = <8 9 17 18>;
 };
 
 &trackball_listener_R {
