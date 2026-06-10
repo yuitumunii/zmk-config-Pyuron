@@ -88,8 +88,8 @@
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         track_remainders;
-        // [RIGHT=next desktop, LEFT=prev desktop, DOWN=前アプリ(⌘Tab), UP=Mission Control]
-        bindings = <&kp LC(RIGHT)>, <&kp LC(LEFT)>, <&kp LG(TAB)>, <&kp LC(UP)>;
+        // [RIGHT=next desktop, LEFT=prev desktop, DOWN=Show Desktop(F11), UP=Mission Control]
+        bindings = <&kp LC(RIGHT)>, <&kp LC(LEFT)>, <&kp F11>, <&kp LC(UP)>;
         mode = <1>;
         tick = <60>;
         tap-ms = <10>;
