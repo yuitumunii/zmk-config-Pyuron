@@ -48,8 +48,8 @@
 // 固着時の切り分けのため、誤発火を減らして滞在時間を伸ばす。
 &zip_temp_layer {
     require-prior-idle-ms = <700>;
-    // 9 = GEST3 key (P, don't auto-fire MOUSE layer while gesturing)
-    excluded-positions = <9 17 18>;
+    // 8=O(MOUSE層MB3/ズームCtrl), 9=P(GEST3) を除外
+    excluded-positions = <8 9 17 18>;
 };
 
 &trackball_listener_R {
@@ -67,13 +67,9 @@
         input-processors = <&zip_keybind_3finger>;
     };
 
-    // Override layer 7 (hyphen-hold SCROLL): was full 2D scroll.
-    // Now: left/right = browser back/forward keys, up/down = scroll.
-    // Same child name "scroller" as Pyuron.dtsi -> overrides its processors.
-    scroller {
-        layers = <7>;
-        input-processors = <&zip_scroll_nav>;
-    };
+    // ROLLBACK: layer 7 (hyphen-hold) uses the native smooth 2D scroller
+    // defined in Pyuron.dtsi (no override here). Cursor does not leak,
+    // Ctrl+scroll zoom works. left/right = horizontal scroll.
 };
 
 / {
@@ -94,22 +90,6 @@
         tick = <120>;
         tap-ms = <10>;
         wait-ms = <400>;
-    };
-
-    // Hyphen-hold (layer 7): left/right = back/forward, up/down = scroll.
-    // Only the dominant axis fires per tick, so vertical scrolling rarely
-    // triggers an accidental left/right navigation.
-    // tick is smaller than the gestures so scrolling stays responsive.
-    zip_scroll_nav: zip_scroll_nav {
-        compatible = "zmk,input-processor-keybind";
-        #input-processor-cells = <0>;
-        track_remainders;
-        // [RIGHT=forward Cmd+], LEFT=back Cmd+[, DOWN=scroll down, UP=scroll up]
-        bindings = <&kp LG(RBKT)>, <&kp LG(LBKT)>, <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        mode = <1>;
-        tick = <25>;
-        tap-ms = <5>;
-        wait-ms = <0>;
     };
 };
 
