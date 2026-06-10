@@ -91,9 +91,9 @@
         // [RIGHT=next desktop, LEFT=prev desktop, DOWN=Show Desktop(F11), UP=Mission Control]
         bindings = <&kp LC(RIGHT)>, <&kp LC(LEFT)>, <&kp F11>, <&kp LC(UP)>;
         mode = <1>;
-        tick = <60>;
+        tick = <120>;
         tap-ms = <10>;
-        wait-ms = <300>;
+        wait-ms = <400>;
     };
 
     // Hyphen-hold (layer 7): left/right = back/forward, up/down = scroll.
