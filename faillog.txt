@@ -1,0 +1,730 @@
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	﻿2026-06-10T01:28:41.2048434Z Current runner version: '2.334.0'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2073532Z ##[group]Runner Image Provisioner
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2074397Z Hosted Compute Agent
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2075049Z Version: 20260520.533
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2075914Z Commit: 189110e25284a9812c124fd27b339e2fb4f2f9db
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2076705Z Build Date: 2026-05-20T17:44:04Z
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2077461Z Worker ID: {aab0aca9-3a62-467b-bd36-56827e46123b}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2078195Z Azure Region: northcentralus
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2078795Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2080390Z ##[group]Operating System
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2081073Z Ubuntu
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2081650Z 24.04.4
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2082178Z LTS
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2082783Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2083426Z ##[group]Runner Image
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2084067Z Image: ubuntu-24.04
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2084822Z Version: 20260525.161.1
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2086684Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260525.161/images/ubuntu/Ubuntu2404-Readme.md
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2088345Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260525.161
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2089363Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2092246Z ##[group]GITHUB_TOKEN Permissions
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2094686Z Actions: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2095369Z ArtifactMetadata: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2096330Z Attestations: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2096893Z Checks: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2097513Z CodeQuality: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2098077Z Contents: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2098716Z Deployments: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2099325Z Discussions: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2099871Z Issues: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2100475Z Metadata: read
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2101013Z Models: read
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2101531Z Packages: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2102274Z Pages: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2102817Z PullRequests: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2103433Z RepositoryProjects: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2104066Z SecurityEvents: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2104649Z Statuses: write
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2105264Z VulnerabilityAlerts: read
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2106233Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2108450Z Secret source: Actions
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2109474Z Prepare workflow directory
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2549286Z Prepare all required actions
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.2586516Z Getting action download info
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.5892469Z Download action repository 'actions/checkout@v6' (SHA:df4cb1c069e1874edd31b4311f1884172cec0e10)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:41.9327650Z Download action repository 'actions/cache@v5' (SHA:27d5ce7f107fe9357f9df03efb73ab90386fccae)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.0352764Z Download action repository 'actions/upload-artifact@v7' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.2187024Z Uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@refs/heads/main (ff09f2d0c9f13a868c8f71d71d9348ade438e4b6)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.2191878Z ##[group] Inputs
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.2192489Z   build_matrix_path: build.yaml
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.2193113Z   config_path: config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.2193645Z   fallback_binary: bin
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.2194447Z   archive_name: firmware
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.2194998Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.2196062Z Complete job name: build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.2758355Z ##[group]Checking docker version
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.2772618Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.3669623Z '1.48'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.3687096Z Docker daemon API version: '1.48'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.3687997Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.3850381Z '1.48'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.3864025Z Docker client API version: '1.48'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.3869732Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.3872744Z ##[group]Clean up resources from previous jobs
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.3878715Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=ec845d"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.4018805Z ##[command]/usr/bin/docker network prune --force --filter "label=ec845d"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.4146192Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.4146774Z ##[group]Create local container network
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.4156994Z ##[command]/usr/bin/docker network create --label ec845d github_network_9e24ec5c5f6c454a8a4b53e3c0852dbb
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.4663499Z c6c58ddb5d588296b3f6e20cb7dcf8884a5e350e153b5e18517b4bbd45523f4e
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.4683707Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.4708213Z ##[group]Starting job container
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.4730348Z ##[command]/usr/bin/docker pull zmkfirmware/zmk-build-arm:stable
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.8615355Z stable: Pulling from zmkfirmware/zmk-build-arm
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.9772952Z a1a21c96bc16: Pulling fs layer
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.9774235Z 80b3f0d914b4: Pulling fs layer
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:42.9775286Z 39f6267735b8: Pulling fs layer
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:43.2564134Z a1a21c96bc16: Verifying Checksum
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:43.2569270Z a1a21c96bc16: Download complete
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:44.1775128Z 80b3f0d914b4: Verifying Checksum
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:44.1777878Z 80b3f0d914b4: Download complete
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:44.8257389Z 39f6267735b8: Verifying Checksum
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:44.8258097Z 39f6267735b8: Download complete
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:44.9140243Z a1a21c96bc16: Pull complete
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:28:53.6329763Z 80b3f0d914b4: Pull complete
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.4379612Z 39f6267735b8: Pull complete
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.4419040Z Digest: sha256:edb1c953438c6f720ddb79c3762f3972013b7fbbaf4fff3592fc869983e7afc5
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.4436269Z Status: Downloaded newer image for zmkfirmware/zmk-build-arm:stable
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.4445994Z docker.io/zmkfirmware/zmk-build-arm:stable
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.4551494Z ##[command]/usr/bin/docker create --name 7b70124fb9be49a9bbb91d45c562fbe1_zmkfirmwarezmkbuildarmstable_0b2753 --label ec845d --workdir /__w/zmk-config-Pyuron/zmk-config-Pyuron --network github_network_9e24ec5c5f6c454a8a4b53e3c0852dbb  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work":"/__w" -v "/home/runner/actions-runner/cached/2.334.0/externals":"/__e":ro -v "/home/runner/work/_temp":"/__w/_temp" -v "/home/runner/work/_actions":"/__w/_actions" -v "/opt/hostedtoolcache":"/__t" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" zmkfirmware/zmk-build-arm:stable "-f" "/dev/null"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.4823040Z 6270d347cac27e6c6f11cd7305d3165114acad50cd8ce630ed4e8c5195d2e6b5
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.4844634Z ##[command]/usr/bin/docker start 6270d347cac27e6c6f11cd7305d3165114acad50cd8ce630ed4e8c5195d2e6b5
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.6710607Z 6270d347cac27e6c6f11cd7305d3165114acad50cd8ce630ed4e8c5195d2e6b5
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.6742126Z ##[command]/usr/bin/docker ps --all --filter id=6270d347cac27e6c6f11cd7305d3165114acad50cd8ce630ed4e8c5195d2e6b5 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.6857874Z 6270d347cac27e6c6f11cd7305d3165114acad50cd8ce630ed4e8c5195d2e6b5 Up Less than a second
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.6877481Z ##[command]/usr/bin/docker inspect --format "{{range .Config.Env}}{{println .}}{{end}}" 6270d347cac27e6c6f11cd7305d3165114acad50cd8ce630ed4e8c5195d2e6b5
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.6999437Z GITHUB_ACTIONS=true
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7000328Z CI=true
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7001397Z HOME=/github/home
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7002164Z PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7003018Z DEBIAN_FRONTEND=noninteractive
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7003718Z ZEPHYR_VERSION=4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7018440Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7027953Z ##[group]Waiting for all services to be ready
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7029554Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7390313Z ##[group]Run actions/checkout@v6
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7390927Z with:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7391170Z   repository: yuitumunii/zmk-config-Pyuron
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7394702Z   token: ***
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7394913Z   ssh-strict: true
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7395139Z   ssh-user: git
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7395390Z   persist-credentials: true
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7396319Z   clean: true
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7396546Z   sparse-checkout-cone-mode: true
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7396816Z   fetch-depth: 1
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7397018Z   fetch-tags: false
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7397222Z   show-progress: true
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7397428Z   lfs: false
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7397615Z   submodules: false
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7397826Z   set-safe-directory: true
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7398400Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.7460906Z ##[command]/usr/bin/docker exec  6270d347cac27e6c6f11cd7305d3165114acad50cd8ce630ed4e8c5195d2e6b5 sh -c "cat /etc/*release | grep ^ID"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9467956Z Syncing repository: yuitumunii/zmk-config-Pyuron
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9470073Z ##[group]Getting Git version info
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9470787Z Working directory is '/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9471756Z [command]/usr/bin/git version
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9472184Z git version 2.43.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9473456Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9514119Z Temporarily overriding HOME='/__w/_temp/44ba50ec-2dc9-4bd1-ab00-458f9be4fa41' before making global git config changes
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9515481Z Adding repository directory to the temporary git global config as a safe directory
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9520582Z [command]/usr/bin/git config --global --add safe.directory /__w/zmk-config-Pyuron/zmk-config-Pyuron
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9552128Z Deleting the contents of '/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9557110Z ##[group]Determining repository object format
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9560002Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9560713Z ##[group]Initializing the repository
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9564846Z [command]/usr/bin/git init /__w/zmk-config-Pyuron/zmk-config-Pyuron
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9602558Z hint: Using 'master' as the name for the initial branch. This default branch name
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9603620Z hint: is subject to change. To configure the initial branch name to use in all
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9604565Z hint: of your new repositories, which will suppress this warning, call:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9605270Z hint: 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9606027Z hint: 	git config --global init.defaultBranch <name>
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9606617Z hint: 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9607141Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9608611Z hint: 'development'. The just-created branch can be renamed via this command:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9609319Z hint: 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9609698Z hint: 	git branch -m <name>
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9610175Z Initialized empty Git repository in /__w/zmk-config-Pyuron/zmk-config-Pyuron/.git/
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9621298Z [command]/usr/bin/git remote add origin https://github.com/yuitumunii/zmk-config-Pyuron
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9652002Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9652433Z ##[group]Disabling automatic garbage collection
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9657420Z [command]/usr/bin/git config --local gc.auto 0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9686103Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9687037Z ##[group]Setting up auth
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9688543Z Removing SSH command configuration
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9694144Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9723821Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9947833Z Removing HTTP extra header
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9954048Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:04.9977699Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.0189063Z Removing includeIf entries pointing to credentials config files
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.0194607Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.0223469Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.0443487Z [command]/usr/bin/git config --file /__w/_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.0478363Z [command]/usr/bin/git config --local includeIf.gitdir:/__w/zmk-config-Pyuron/zmk-config-Pyuron/.git.path /__w/_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.0506005Z [command]/usr/bin/git config --local includeIf.gitdir:/__w/zmk-config-Pyuron/zmk-config-Pyuron/.git/worktrees/*.path /__w/_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.0535201Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.0564673Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.0590875Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.0591605Z ##[group]Fetching the repository
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.0600202Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +84d32e2696d0a31ab4f6c74afbcda9755a51bd2d:refs/remotes/origin/main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3267521Z From https://github.com/yuitumunii/zmk-config-Pyuron
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3268342Z  * [new ref]         84d32e2696d0a31ab4f6c74afbcda9755a51bd2d -> origin/main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3297424Z [command]/usr/bin/git branch --list --remote origin/main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3322489Z   origin/main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3334021Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3355411Z 84d32e2696d0a31ab4f6c74afbcda9755a51bd2d
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3360399Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3361072Z ##[group]Determining the checkout info
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3362845Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3367436Z [command]/usr/bin/git sparse-checkout disable
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3404605Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3430774Z ##[group]Checking out the ref
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3434828Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3493341Z Switched to a new branch 'main'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3494019Z branch 'main' set up to track 'origin/main'.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3502149Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3533147Z [command]/usr/bin/git log -1 --format=%H
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3564857Z 84d32e2696d0a31ab4f6c74afbcda9755a51bd2d
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3773629Z ##[group]Run echo "build_dir=$(mktemp -d)" >> $GITHUB_ENV
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3774123Z [36;1mecho "build_dir=$(mktemp -d)" >> $GITHUB_ENV[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3777916Z shell: sh -e {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.3778158Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4389447Z ##[group]Run if [ -e zephyr/module.yml ]; then
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4389877Z [36;1mif [ -e zephyr/module.yml ]; then[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4390294Z [36;1m  export zmk_load_arg=" -DZMK_EXTRA_MODULES='${GITHUB_WORKSPACE}'"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4390731Z [36;1m  new_tmp_dir="${TMPDIR:-/tmp}/zmk-config"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4391049Z [36;1m  mkdir -p "${new_tmp_dir}"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4391358Z [36;1m  echo "base_dir=${new_tmp_dir}" >> $GITHUB_ENV[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4391658Z [36;1melse[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4391916Z [36;1m  echo "base_dir=${GITHUB_WORKSPACE}" >> $GITHUB_ENV[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4392228Z [36;1mfi[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4392407Z [36;1m[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4392598Z [36;1mif [ -n "${snippet}" ]; then[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4392878Z [36;1m  extra_west_args="-S \"${snippet}\""[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4393147Z [36;1mfi[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4393323Z [36;1m[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4393613Z [36;1mecho "zephyr_version=${ZEPHYR_VERSION}" >> $GITHUB_ENV[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4394017Z [36;1mecho "extra_west_args=${extra_west_args}" >> $GITHUB_ENV[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4394691Z [36;1mecho "extra_cmake_args=${shield:+-DSHIELD=\"$shield\"}${zmk_load_arg}" >> $GITHUB_ENV[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4395233Z [36;1mecho "display_name=${shield:+$shield - }${board}" >> $GITHUB_ENV[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4396155Z [36;1mecho "artifact_name=${artifact_name:-${shield:+$shield-}${board//\//_}-zmk}" >> $GITHUB_ENV[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4397869Z shell: bash -x {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4398098Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4398313Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4398590Z   board: xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4398847Z   shield: Pyuron_R rgbled_adapter
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4399093Z   artifact_name: 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4399312Z   snippet: studio-rpc-usb-uart
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4399556Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4916970Z + '[' -e zephyr/module.yml ']'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4918076Z + export 'zmk_load_arg= -DZMK_EXTRA_MODULES='\''/__w/zmk-config-Pyuron/zmk-config-Pyuron'\'''
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4919323Z + zmk_load_arg=' -DZMK_EXTRA_MODULES='\''/__w/zmk-config-Pyuron/zmk-config-Pyuron'\'''
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4920207Z + new_tmp_dir=/tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4920748Z + mkdir -p /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4931505Z + echo base_dir=/tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4931844Z + '[' -n studio-rpc-usb-uart ']'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4932152Z + extra_west_args='-S "studio-rpc-usb-uart"'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4932470Z + echo zephyr_version=4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4932751Z + echo 'extra_west_args=-S "studio-rpc-usb-uart"'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4933386Z + echo 'extra_cmake_args=-DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='\''/__w/zmk-config-Pyuron/zmk-config-Pyuron'\'''
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4934430Z + echo 'display_name=Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.4935216Z + echo 'artifact_name=Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5008859Z ##[group]Run if [ "/tmp/zmk-config" != "${GITHUB_WORKSPACE}" ]; then
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5009377Z [36;1mif [ "/tmp/zmk-config" != "${GITHUB_WORKSPACE}" ]; then[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5009744Z [36;1m  mkdir "/tmp/zmk-config/config"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5010076Z [36;1m  cp -R config/* "/tmp/zmk-config/config/"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5010373Z [36;1mfi[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5010651Z shell: sh -e {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5010846Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5011044Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5011301Z   base_dir: /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5011535Z   zephyr_version: 4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5011789Z   extra_west_args: -S "studio-rpc-usb-uart"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5012352Z   extra_cmake_args: -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5012962Z   display_name: Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5013416Z   artifact_name: Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.5013766Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6366850Z ##[group]Run actions/cache@v5
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6367178Z with:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6367702Z   path: /tmp/zmk-config/modules/
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	/tmp/zmk-config/tools/
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	/tmp/zmk-config/zephyr/
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	/tmp/zmk-config/bootloader/
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	/tmp/zmk-config/zmk/
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6368614Z   key: Linux-build-cache-zephyr-4.1.0-modules-d1f658c3ae38bc997aa73d7b109428ea5347423e0e4b66175f06e67715a68dd6
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6369357Z   restore-keys: Linux-build-cache-zephyr-4.1.0-modules-
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	Linux-build-
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	Linux-
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6369802Z   enableCrossOsArchive: false
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6370075Z   fail-on-cache-miss: false
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6370337Z   lookup-only: false
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6370565Z   save-always: false
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6370777Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6370989Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6371258Z   base_dir: /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6371503Z   zephyr_version: 4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6371765Z   extra_west_args: -S "studio-rpc-usb-uart"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6372382Z   extra_cmake_args: -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6373302Z   display_name: Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6373747Z   artifact_name: Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6374130Z   cache_name: cache-zephyr-4.1.0-modules
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6374410Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.6379750Z ##[command]/usr/bin/docker exec  6270d347cac27e6c6f11cd7305d3165114acad50cd8ce630ed4e8c5195d2e6b5 sh -c "cat /etc/*release | grep ^ID"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:05.9797367Z Cache hit for restore-key: Linux-build-cache-zephyr-4.1.0-modules-ffb25af4756853e695af6852d8e7ad889d30b1f2320723c7762ca7024bfe1db8
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:07.0847453Z Received 104857600 of 892424700 (11.7%), 99.8 MBs/sec
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:08.0862572Z Received 268435456 of 892424700 (30.1%), 127.7 MBs/sec
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:09.0899481Z Received 440401920 of 892424700 (49.3%), 139.8 MBs/sec
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:10.0865350Z Received 624951296 of 892424700 (70.0%), 148.8 MBs/sec
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:11.0894646Z Received 763363328 of 892424700 (85.5%), 145.4 MBs/sec
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:11.9924006Z Received 892424700 of 892424700 (100.0%), 144.0 MBs/sec
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:11.9926510Z Cache Size: ~851 MB (892424700 B)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:12.0033420Z [command]/usr/bin/tar -xf /__w/_temp/e044591c-beb5-454f-99e2-393fb8476c81/cache.tgz -P -C /__w/zmk-config-Pyuron/zmk-config-Pyuron -z
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.5544242Z Cache restored successfully
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6014340Z Cache restored from key: Linux-build-cache-zephyr-4.1.0-modules-ffb25af4756853e695af6852d8e7ad889d30b1f2320723c7762ca7024bfe1db8
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6185946Z ##[group]Run west init -l "/tmp/zmk-config/config"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6186432Z [36;1mwest init -l "/tmp/zmk-config/config"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6186895Z shell: sh -e {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6187118Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6187337Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6187619Z   base_dir: /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6187879Z   zephyr_version: 4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6188179Z   extra_west_args: -S "studio-rpc-usb-uart"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6188786Z   extra_cmake_args: -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6189462Z   display_name: Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6189954Z   artifact_name: Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.6190351Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.7887796Z === Initializing from existing manifest repository config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.7888876Z --- Creating /tmp/zmk-config/.west and local configuration file
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.7897867Z === Initialized. Now run "west update" inside /tmp/zmk-config.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8142464Z ##[group]Run west update --fetch-opt=--filter=tree:0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8142969Z [36;1mwest update --fetch-opt=--filter=tree:0[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8143419Z shell: sh -e {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8143640Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8143856Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8144170Z   base_dir: /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8144434Z   zephyr_version: 4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8144715Z   extra_west_args: -S "studio-rpc-usb-uart"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8145340Z   extra_cmake_args: -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8146773Z   display_name: Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8147274Z   artifact_name: Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:29.8147650Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:30.0747022Z === updating zmk (zmk):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:30.0775035Z --- zmk: fetching, need revision main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:30.4786927Z From https://github.com/zmkfirmware/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:30.4787857Z  * branch            main       -> FETCH_HEAD
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:31.1487543Z Previous HEAD position was ed56d81 docs: Move the hardware integration section out of development (#3360)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:31.1492129Z HEAD is now at ff09f2d docs: reorganise supported hardware page (#3363)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:31.1641834Z === updating zephyr (zephyr):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:31.1669638Z --- zephyr: fetching, need revision v4.1.0+zmk-fixes
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:31.5899213Z From https://github.com/zmkfirmware/zephyr
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:31.5900229Z  * branch              v4.1.0+zmk-fixes -> FETCH_HEAD
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.1476687Z HEAD is now at 58a5874a backport ls0xx serial VCOM inversion support to Zephyr 4.1
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.1906547Z === updating zmk-pmw3610-driver (zmk-pmw3610-driver):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.1907531Z --- zmk-pmw3610-driver: initializing
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.1952353Z Initialized empty Git repository in /tmp/zmk-config/zmk-pmw3610-driver/.git/
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.1983911Z --- zmk-pmw3610-driver: fetching, need revision main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.4042880Z From https://github.com/badjeff/zmk-pmw3610-driver
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.4043365Z  * branch            main       -> FETCH_HEAD
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.7400017Z HEAD is now at 44b4a76 Refactor pmw3610 data handling to use struct for dx, dy, and timestamps
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.7451238Z HEAD is now at 44b4a76 Refactor pmw3610 data handling to use struct for dx, dy, and timestamps
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.7455252Z === updating zmk-rgbled-widget (zmk-rgbled-widget):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.7456867Z --- zmk-rgbled-widget: initializing
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.7501418Z Initialized empty Git repository in /tmp/zmk-config/zmk-rgbled-widget/.git/
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.7532451Z --- zmk-rgbled-widget: fetching, need revision main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.9794803Z From https://github.com/caksoylar/zmk-rgbled-widget
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.9795956Z  * branch            main       -> FETCH_HEAD
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.9797766Z  * [new tag]         v0.3       -> v0.3
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:33.9798631Z  * [new tag]         v0.3.0     -> v0.3.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:34.3540575Z HEAD is now at 9cef5af fix: Prevent uint16_t overflow in blink duration (#21)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:34.3594487Z HEAD is now at 9cef5af fix: Prevent uint16_t overflow in blink duration (#21)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:34.3598271Z === updating zmk-input-processor-keybind (zmk-input-processor-keybind):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:34.3599105Z --- zmk-input-processor-keybind: initializing
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:34.3631620Z Initialized empty Git repository in /tmp/zmk-config/zmk-input-processor-keybind/.git/
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:34.3663665Z --- zmk-input-processor-keybind: fetching, need revision main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:34.6063374Z From https://github.com/zettaface/zmk-input-processor-keybind
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:34.6064220Z  * branch            main       -> FETCH_HEAD
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:34.9376866Z HEAD is now at 64303bd fix keys release for continuous mode
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:34.9427007Z HEAD is now at 64303bd fix keys release for continuous mode
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:34.9431354Z === updating hal_stm32 (modules/hal/stm32):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:36.9548114Z HEAD is now at 4fcc3a3 stm32cube: Minor stm32c0 fix to include HAL_PCD header.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:36.9551844Z === updating lvgl (modules/lib/gui/lvgl):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.6126526Z HEAD is now at f1db87e feat(theme_mono): Pass small/large fonts to theme init
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.6131141Z === updating zmk-studio-messages (modules/msgs/zmk-studio-messages):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.6262282Z HEAD is now at 6cb4c28 refactor: Return detailed save changes response.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.6266159Z === updating canopennode (modules/lib/canopennode):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.6444020Z HEAD is now at dec12fa stack: map CANopenNode crc16_ccitt() to Zephyr crc16_itu_t()
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.6448074Z === updating chre (modules/lib/chre):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.6999699Z HEAD is now at 3b32c76 zephyr: link the .unstable_id data in ROM
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.7003467Z === updating lz4 (modules/lib/lz4):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.7239079Z HEAD is now at 11b8a1e Merge pull request #2 from parthitce/dev/v1.10.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.7242761Z === updating nanopb (modules/lib/nanopb):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.7580702Z HEAD is now at 7307ce3 Update README.md (#1042)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.7585148Z === updating psa-arch-tests (modules/tee/tf-m/psa-arch-tests):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.8245832Z HEAD is now at 2cadb02 Merge pull request #10 from mswarowsky/tfm_20_upmerge
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.8250822Z === updating sof (modules/audio/sof):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.9553218Z HEAD is now at bc08c9c6 app: zephyr still requires cmake version 3.20.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:37.9558482Z === updating tf-m-tests (modules/tee/tf-m/tf-m-tests):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.0115508Z HEAD is now at 502ea90 Merge pull request #11 from tomi-font/update_2.1.1
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.0119864Z === updating tflite-micro (optional/modules/lib/tflite-micro):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.0120670Z --- tflite-micro: initializing
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.0157744Z Initialized empty Git repository in /tmp/zmk-config/optional/modules/lib/tflite-micro/.git/
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.0191410Z --- tflite-micro: fetching, need revision 8d404de73acf7687831e16d88e86e4f73cfddf8e
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.4454369Z From https://github.com/zephyrproject-rtos/tflite-micro
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.4455856Z  * [new branch]      main             -> refs/west/main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.4457241Z  * [new branch]      zephyr           -> refs/west/zephyr
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.4458141Z  * [new branch]      zephyr-v3.6.0    -> refs/west/zephyr-v3.6.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.4467615Z  * [new branch]      zephyr-v4.1.0    -> refs/west/zephyr-v4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.4468571Z  * [new branch]      zephyr-v4.4.0    -> refs/west/zephyr-v4.4.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.4469016Z  * [new tag]         zephyr_202108023 -> zephyr_202108023
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.4469586Z  * [new tag]         zephyr_20230809  -> zephyr_20230809
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:38.4469952Z  * [new tag]         zephyr_20240627  -> zephyr_20240627
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:39.6905302Z HEAD is now at 8d404de third_party_static: exported
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:39.8166296Z HEAD is now at 8d404de third_party_static: exported
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:39.8171312Z === updating thrift (optional/modules/lib/thrift):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:39.8171913Z --- thrift: initializing
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:39.8207015Z Initialized empty Git repository in /tmp/zmk-config/optional/modules/lib/thrift/.git/
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:39.8240590Z --- thrift: fetching, need revision 10023645a0e6cb7ce23fcd7fd3dbac9f18df6234
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:40.2714339Z From https://github.com/zephyrproject-rtos/thrift
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:40.2715328Z  * [new branch]      add-zephyr-module-dir -> refs/west/add-zephyr-module-dir
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:40.2716495Z  * [new branch]      make-external-module  -> refs/west/make-external-module
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:40.2718309Z  * [new branch]      master                -> refs/west/master
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:40.2719329Z  * [new branch]      update-zephyr-to-thrift-0.20.0 -> refs/west/update-zephyr-to-thrift-0.20.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:40.2721149Z  * [new branch]      zephyr                -> refs/west/zephyr
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:41.8044165Z HEAD is now at 1002364 Merge pull request #1 from zephyrproject-rtos/add-zephyr-module-dir
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:41.9906975Z HEAD is now at 1002364 Merge pull request #1 from zephyrproject-rtos/add-zephyr-module-dir
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:41.9915239Z === updating zephyr-lang-rust (modules/lang/rust):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.0078975Z HEAD is now at 37dc7fa zephyr: printk: Use proper type for `c_char`
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.0082980Z === updating zscilib (modules/lib/zscilib):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.0297373Z HEAD is now at ee1b287 samples/tests: Update for hwmv2 board names
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.0301516Z === updating acpica (modules/lib/acpica):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.2198866Z HEAD is now at 8d24867b Merge pull request #5 from dcpleung/kernel/mm_z_phys_map_unmap_rename
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.2204134Z === updating cmsis (modules/hal/cmsis):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.2432950Z HEAD is now at d1b8b20 Backport CMSIS_6#102 to CMSIS 5.9.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.2434670Z === updating cmsis-dsp (modules/lib/cmsis-dsp):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.5796061Z HEAD is now at d80a49b do not generate warnings when scalar functions are used with MVE
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.5802494Z === updating cmsis-nn (modules/lib/cmsis-nn):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.6714663Z HEAD is now at e9328d6 manifest: zephyr module file
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.6719414Z === updating cmsis_6 (modules/lib/cmsis_6):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.7503346Z HEAD is now at 783317a TZ applications can be secure-only (#204)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.7507570Z === updating fatfs (modules/fs/fatfs):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.7700377Z HEAD is now at 16245c7 fs: Update driver to version 0.15a
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.7704243Z === updating hal_adi (modules/hal/adi):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.9209060Z HEAD is now at 633fcec fix(Other): Fix typo with `#include <max32660.h>` in Zephyr wrapper (#1276)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:42.9213511Z === updating hal_ambiq (modules/hal/ambiq):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.0142394Z HEAD is now at 87a188b hal: ambiq: add apollo3x BT controller deinitialization API.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.0145456Z === updating hal_atmel (modules/hal/atmel):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.2938448Z HEAD is now at da76744 samr35: dac: Rename EMPTY bit-fields to avoid name collision.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.2944264Z === updating hal_espressif (modules/hal/espressif):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.6361184Z HEAD is now at 202c5955 cache: get cpu id from register
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.6368163Z === updating hal_ethos_u (modules/hal/ethos_u):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.6571202Z HEAD is now at 50ddffc Cache optimizations
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.6575747Z === updating hal_gigadevice (modules/hal/gigadevice):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.7164571Z HEAD is now at 2994b7d README.md: add pllmf and pack exception for gd32a50x
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.7169213Z === updating hal_intel (modules/hal/intel):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.7335897Z HEAD is now at 0355bb8 pm: add support for ptl ish d0i2/ipapg
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:43.7339741Z === updating hal_nordic (modules/hal/nordic):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:44.4488536Z HEAD is now at 37ca068 drivers: nrfx_usbreg: clear USBPWRRDY event on initialization
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:44.4492961Z === updating hal_nuvoton (modules/hal/nuvoton):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:44.5264852Z HEAD is now at 466c3ee hal: nuvoton: m2l31: fixed TRUE redefined warning
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:44.5268872Z === updating hal_quicklogic (modules/hal/quicklogic):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:44.5409188Z HEAD is now at bad8944 HAL: eoss3_dev: add missing `__cplusplus` handling
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:44.5412886Z === updating hal_renesas (modules/hal/renesas):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:44.7451917Z HEAD is now at 3204903 hal: renesas: ra: Modify BSP_PRV_IELS_ENUM for build process
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:44.7456312Z === updating hal_rpi_pico (modules/hal/rpi_pico):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:44.8544325Z HEAD is now at 7b57b24 Merge pull request #8 from ajf58/merge-2.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:44.8546252Z === updating hal_silabs (modules/hal/silabs):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.5256176Z HEAD is now at 8a173e9 wiseconnect: Fix si91x_bus event during platform deinitialization
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.5260926Z === updating hal_tdk (modules/hal/tdk):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.5405954Z HEAD is now at 6727477 Merge pull request #8 from tdk-invn-oss/main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.5410609Z === updating hal_telink (modules/hal/telink):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.5599060Z HEAD is now at 4226c7f drivers: Disable BLE support
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.5602540Z === updating hal_wch (modules/hal/wch):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.5749199Z HEAD is now at 1de9d3e Add hal_wch based on the 'ch32v003fun' project
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.5752872Z === updating hal_wurthelektronik (modules/hal/wurthelektronik):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.5903260Z HEAD is now at e3e2797 Remove preprocessor warnings for not enabling float
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.5906761Z === updating hostap (modules/lib/hostap):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.7080038Z HEAD is now at 697fd2cf [noup] zephyr: Fix WPA3 connection issue
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.7084731Z === updating liblc3 (modules/lib/liblc3):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.7337204Z HEAD is now at 48bbd3e Rename lc3 python package to lc3py, and bump version to 1.1.2
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.7341199Z === updating libmctp (modules/lib/libmctp):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.7483366Z HEAD is now at b97860e build MCTP zephyr library only when CONFIG_MCTP is enabled
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.7487444Z === updating libmetal (modules/hal/libmetal):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.7665961Z HEAD is now at 3e8781a lib: update libmetal to release v2024.10.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.7669757Z === updating littlefs (modules/fs/littlefs):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.7866263Z HEAD is now at ed0531d Merge pull request #15 from Jappie3/zephyr
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.7870526Z === updating mbedtls (modules/crypto/mbedtls):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.9335257Z HEAD is now at 4952e132 psa: use static key slot buffers to store key material
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.9339876Z === updating mipi-sys-t (modules/debug/mipi-sys-t):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.9527833Z HEAD is now at 33e5c23 Fix for warning of potential error using = instead of ==
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.9531422Z === updating nrf_hw_models (modules/bsim_hw_models/nrf_hw_models):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.9756018Z HEAD is now at 73a5d58 54 CCM: Fix UBSAN reported issue with zero size VLAs
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.9760067Z === updating nrf_wifi (modules/lib/nrf_wifi):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.9939958Z HEAD is now at e35f707 Fix SoftAP mode compilation issues
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:45.9943392Z === updating open-amp (modules/lib/open-amp):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.0121812Z HEAD is now at 52bb178 lib: update open-amp lib to release v2024.10.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.0125569Z === updating percepio (modules/debug/percepio):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.0377144Z HEAD is now at 49e6dc2 Merge branch 'main' into zephyr
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.0381672Z === updating picolibc (modules/lib/picolibc):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.2236853Z HEAD is now at 82d62ed1 zephyr: Disable LTO when building the library
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.2241341Z === updating segger (modules/debug/segger):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.2388847Z HEAD is now at cf56b1d readme: Add readme
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.2392540Z === updating tinycrypt (modules/crypto/tinycrypt):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.2529731Z HEAD is now at 1012a3e Fix warnings reported by UBSAN
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.2533598Z === updating trusted-firmware-a (modules/tee/tf-a/trusted-firmware-a):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.4493040Z HEAD is now at 713ffbf9 Merge pull request #4 from ceolin/v2.10.4
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.4498551Z === updating uoscore-uedhoc (modules/lib/uoscore-uedhoc):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.4745517Z HEAD is now at 54abc10 Merge pull request #5 from rlubos/upmerge-02-2025
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.4749420Z === updating zcbor (modules/lib/zcbor):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.4963603Z HEAD is now at 9b07780 Update version to 0.9.1
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5217580Z ##[group]Run zmk_revision=$(west list -f "{revision}" zmk)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5218087Z [36;1mzmk_revision=$(west list -f "{revision}" zmk)[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5218524Z [36;1mecho "zmk_revision=${zmk_revision}" >> $GITHUB_ENV[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5218912Z [36;1mecho "ZMK revision: ${zmk_revision}"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5219555Z shell: sh -e {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5219773Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5219995Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5220287Z   base_dir: /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5220545Z   zephyr_version: 4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5220817Z   extra_west_args: -S "studio-rpc-usb-uart"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5221485Z   extra_cmake_args: -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5222167Z   display_name: Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5222659Z   artifact_name: Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.5223086Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.7949887Z ZMK revision: main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8007173Z ##[group]Run west zephyr-export
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8007505Z [36;1mwest zephyr-export[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8007832Z shell: sh -e {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8008041Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8008245Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8008509Z   base_dir: /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8008974Z   zephyr_version: 4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8009367Z   extra_west_args: -S "studio-rpc-usb-uart"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8010012Z   extra_cmake_args: -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8010790Z   display_name: Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8011396Z   artifact_name: Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8011881Z   zmk_revision: main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:46.8012367Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.3448651Z Zephyr (/tmp/zmk-config/zephyr/share/zephyr-package/cmake)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.3449513Z has been added to the user package registry in:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.3449876Z ~/.cmake/packages/Zephyr
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.3450043Z 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6152410Z ZephyrUnittest (/tmp/zmk-config/zephyr/share/zephyrunittest-package/cmake)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6153368Z has been added to the user package registry in:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6153992Z ~/.cmake/packages/ZephyrUnittest
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6154345Z 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6422371Z ##[group]Run west build -s zmk/app -d "/tmp/tmp.K5iHR7CtYB" -b "xiao_ble/nrf52840/zmk" -S "studio-rpc-usb-uart" -- -DZMK_CONFIG=/tmp/zmk-config/config -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron' 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6424112Z [36;1mwest build -s zmk/app -d "/tmp/tmp.K5iHR7CtYB" -b "xiao_ble/nrf52840/zmk" -S "studio-rpc-usb-uart" -- -DZMK_CONFIG=/tmp/zmk-config/config -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron' [0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6425176Z shell: sh -x {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6425387Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6425586Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6426188Z   base_dir: /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6426436Z   zephyr_version: 4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6426686Z   extra_west_args: -S "studio-rpc-usb-uart"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6427823Z   extra_cmake_args: -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6428861Z   display_name: Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6429550Z   artifact_name: Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6430102Z   zmk_revision: main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6430445Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.6950734Z + west build -s zmk/app -d /tmp/tmp.K5iHR7CtYB -b xiao_ble/nrf52840/zmk -S studio-rpc-usb-uart -- -DZMK_CONFIG=/tmp/zmk-config/config -DSHIELD=Pyuron_R rgbled_adapter -DZMK_EXTRA_MODULES=/__w/zmk-config-Pyuron/zmk-config-Pyuron
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:47.9045803Z -- west build: generating a build system
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.1742278Z Loading Zephyr default modules (Zephyr base).
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.1743055Z -- Application: /tmp/zmk-config/zmk/app
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.1743718Z -- CMake version: 3.31.6
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.2838864Z -- Found Python3: /usr/bin/python3 (found suitable version "3.12.3", minimum required is "3.10") found components: Interpreter
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.2957720Z -- Cache files will be written to: /tmp/zmk-config/zephyr/.cache
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.3024077Z -- Zephyr version: 4.1.0 (/tmp/zmk-config/zephyr)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.3671066Z -- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8607233Z CMake Deprecation Warning at keymap-module/modules/modules.cmake:53 (message):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8608243Z -- Adding ZMK config directory as board root: /tmp/zmk-config/config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8609400Z   The `config/boards` folder is deprecated.  Please use a module instead.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8610554Z   See https://zmk.dev/docs/hardware-integration/new-shield and
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8611649Z   https://zmk.dev/docs/development/module-creation for more information.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8612628Z Call Stack (most recent call first):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8613555Z   /tmp/zmk-config/zephyr/cmake/modules/zephyr_module.cmake:126 (include)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8614128Z   /tmp/zmk-config/zephyr/cmake/modules/zephyr_default.cmake:134 (include)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8614718Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8615389Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8616193Z   CMakeLists.txt:9 (find_package)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8616379Z 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:48.8616383Z 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.6305010Z -- Board: xiao_ble, qualifiers: nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.7159197Z -- Shield(s): Pyuron_R rgbled_adapter
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.7477486Z Checking /tmp/zmk-config/zmk-rgbled-widget
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.7478840Z Checking /__w/zmk-config-Pyuron/zmk-config-Pyuron
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.7479469Z Checking /tmp/zmk-config/zmk/app/module
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.7479991Z Checking /tmp/zmk-config/zmk/app
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.7480713Z found /tmp/zmk-config/zmk/app
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.7483212Z -- ZMK Config directory: /tmp/zmk-config/config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.7490187Z xiao_ble_nrf52840_zmk for _nrf52840_zmk for xiao_ble with version 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.7491369Z -- Using keymap file: /tmp/zmk-config/config/Pyuron.keymap
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.7496087Z Checking /tmp/zmk-config/config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.7496576Z Checking /tmp/zmk-config/zephyr
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:49.8723664Z -- Snippet(s): studio-rpc-usb-uart
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2131158Z -- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2155196Z -- Found host-tools: zephyr 0.16.9 (/opt/zephyr-sdk-0.16.9)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2168898Z -- Found toolchain: zephyr 0.16.9 (/opt/zephyr-sdk-0.16.9)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2233152Z -- Found Dtc: /opt/zephyr-sdk-0.16.9/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.6.0", minimum required is "1.4.6")
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2263715Z -- Found BOARD.dts: /tmp/zmk-config/zmk/app/boards/seeed/xiao_ble/xiao_ble_zmk.dts
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2265031Z -- Found devicetree overlay: /tmp/zmk-config/config/boards/shields/Pyuron/Pyuron_R.overlay
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2266955Z -- Found devicetree overlay: /tmp/zmk-config/zmk-rgbled-widget/boards/shields/rgbled_adapter/rgbled_adapter.overlay
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2268376Z -- Found devicetree overlay: /tmp/zmk-config/zmk-rgbled-widget/boards/shields/rgbled_adapter/boards/xiao_ble_zmk.overlay
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2269368Z -- Found devicetree overlay: /tmp/zmk-config/config/Pyuron.keymap
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2270265Z -- Found devicetree overlay: /tmp/zmk-config/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.overlay
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2691635Z In file included from <command-line>:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2692533Z /tmp/zmk-config/config/Pyuron.keymap:92:11: error: macro "RC" requires 2 arguments, but only 1 given
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2693938Z    92 | &kp RC(TAB)   &kp LS(N5)            &kp LS(NUMBER_6)      &kp LS(N7)        &kp LS(N8)                &kp SEMICOLON  &kp SQT     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(GRAVE)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2694974Z       |           ^
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2695833Z In file included from /tmp/zmk-config/config/boards/shields/Pyuron/Pyuron.dtsi:1,
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2696825Z                  from /tmp/zmk-config/config/boards/shields/Pyuron/Pyuron_R.overlay:5,
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2697542Z                  from <command-line>:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2698355Z /tmp/zmk-config/zmk/app/include/dt-bindings/zmk/matrix_transform.h:10: note: macro "RC" defined here
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2699219Z    10 | #define RC(row, col) (((row) << 8) + (col))
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2699692Z       | 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2711714Z CMake Error at /tmp/zmk-config/zephyr/cmake/modules/extensions.cmake:4611 (message):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2712270Z   failed to preprocess devicetree files (error code 1):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2714030Z   /tmp/zmk-config/zmk/app/boards/seeed/xiao_ble/xiao_ble_zmk.dts;/tmp/zmk-config/config/boards/shields/Pyuron/Pyuron_R.overlay;/tmp/zmk-config/zmk-rgbled-widget/boards/shields/rgbled_adapter/rgbled_adapter.overlay;/tmp/zmk-config/zmk-rgbled-widget/boards/shields/rgbled_adapter/boards/xiao_ble_zmk.overlay;/tmp/zmk-config/config/Pyuron.keymap;/tmp/zmk-config/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.overlay
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2716738Z Call Stack (most recent call first):
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2717205Z   /tmp/zmk-config/zephyr/cmake/modules/dts.cmake:257 (zephyr_dt_preprocess)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2717807Z   /tmp/zmk-config/zephyr/cmake/modules/zephyr_default.cmake:134 (include)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2718350Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2718967Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2719684Z   CMakeLists.txt:9 (find_package)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2719861Z 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2719865Z 
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2720006Z -- Configuring incomplete, errors occurred!
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.2767048Z FATAL ERROR: command exited with status 1: /usr/local/bin/cmake -DWEST_PYTHON=/usr/bin/python3 -B/tmp/tmp.K5iHR7CtYB -GNinja -DBOARD=xiao_ble/nrf52840/zmk -DZMK_CONFIG=/tmp/zmk-config/config '-DSHIELD=Pyuron_R rgbled_adapter' -DZMK_EXTRA_MODULES=/__w/zmk-config-Pyuron/zmk-config-Pyuron -DSNIPPET=studio-rpc-usb-uart -S/tmp/zmk-config/zmk/app
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3007614Z ##[error]Process completed with exit code 1.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3063610Z ##[group]Run echo "# Consider Pinning ZMK" >> $GITHUB_STEP_SUMMARY
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3064140Z [36;1mecho "# Consider Pinning ZMK" >> $GITHUB_STEP_SUMMARY[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3064790Z [36;1mecho "Your recent build failure might be the result of breaking changes made to ZMK's main branch." >> $GITHUB_STEP_SUMMARY[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3066072Z [36;1mecho "Consider [pinning your ZMK version](https://zmk.dev/blog/2025/06/20/pinned-zmk) to a release for increased stability." >> $GITHUB_STEP_SUMMARY[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3067048Z [36;1mecho "See also the [list of released versions](https://github.com/zmkfirmware/zmk/releases)." >> $GITHUB_STEP_SUMMARY[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3068198Z [36;1mecho "If you wish to stay on main, check the most recent pending release PR for breaking changes. [Our blog](https://zmk.dev/blog) may have upgrade information if breaking changes are significant." >> $GITHUB_STEP_SUMMARY[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3069156Z shell: sh -e {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3069388Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3069587Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3069851Z   base_dir: /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3070083Z   zephyr_version: 4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3070337Z   extra_west_args: -S "studio-rpc-usb-uart"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3070889Z   extra_cmake_args: -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3071504Z   display_name: Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3071929Z   artifact_name: Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3072279Z   zmk_revision: main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3072487Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3647510Z ##[group]Run if ! (grep "CONFIG_ZMK_BOARD_COMPAT=y" "/tmp/tmp.K5iHR7CtYB/zephyr/.config" > /dev/null)
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3648271Z [36;1mif ! (grep "CONFIG_ZMK_BOARD_COMPAT=y" "/tmp/tmp.K5iHR7CtYB/zephyr/.config" > /dev/null)[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3648728Z [36;1mthen[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3649069Z [36;1m  original_board=$(echo "xiao_ble/nrf52840/zmk" | sed -e 's$/.*$$')[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3649818Z [36;1m  west_board=$(west boards --board-root /tmp/zmk-config/zmk/app/module --board-root /tmp/zmk-config/zmk/app --board "${original_board}")[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3650455Z [36;1m  if [ -z "$west_board" ]; then[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3650907Z [36;1m    echo "Not found the board listed with west boards. Skipping further checking."[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3651339Z [36;1m    exit 0[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3651567Z [36;1m  fi[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3651778Z [36;1m[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3652465Z [36;1m  west boards --board-root /tmp/zmk-config/zmk/app/module --board-root /tmp/zmk-config/zmk/app --board "${original_board}" --format "{qualifiers}" | grep "zmk" > /dev/null[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3653211Z [36;1m  if [ $? -ne 0 ][0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3653459Z [36;1m  then[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3654244Z [36;1m    echo "::warning file=build/zephyr/.config,title=Missing ZMK Compat::The selected board does not report explicit ZMK compat. Please verify you've selected the correct board and ZMK variant if one exists"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3655076Z [36;1m  else[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3656154Z [36;1m    echo "::error file=build/zephyr/.config,title=Missing ZMK Compat::The selected board is not set up for ZMK and there is a ZMK variant available. See https://zmk.dev/blog/2025/12/09/zephyr-4-1#zmk-board-variant."[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3657233Z [36;1m    exit 1[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3657463Z [36;1m  fi[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3657666Z [36;1mfi[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3657945Z shell: sh -e {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3658164Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3658386Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3658677Z   base_dir: /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3658926Z   zephyr_version: 4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3659188Z   extra_west_args: -S "studio-rpc-usb-uart"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3659764Z   extra_cmake_args: -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3660463Z   display_name: Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3660936Z   artifact_name: Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3661299Z   zmk_revision: main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.3661527Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:50.4168421Z grep: /tmp/tmp.K5iHR7CtYB/zephyr/.config: No such file or directory
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2850054Z ##[error]The selected board is not set up for ZMK and there is a ZMK variant available. See https://zmk.dev/blog/2025/12/09/zephyr-4-1#zmk-board-variant.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2864959Z ##[error]Process completed with exit code 1.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2897601Z ##[group]Run if [ -f "/tmp/tmp.K5iHR7CtYB/zephyr/.config" ]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2898071Z [36;1mif [ -f "/tmp/tmp.K5iHR7CtYB/zephyr/.config" ][0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2898395Z [36;1mthen[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2898707Z [36;1m  grep -v -e "^#" -e "^$" "/tmp/tmp.K5iHR7CtYB/zephyr/.config" | sort[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2899057Z [36;1melse[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2899267Z [36;1m  echo "No Kconfig output"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2899565Z [36;1mfi[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2899821Z shell: sh -e {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2900033Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2900230Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2900488Z   base_dir: /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2900738Z   zephyr_version: 4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2900994Z   extra_west_args: -S "studio-rpc-usb-uart"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2901562Z   extra_cmake_args: -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2902200Z   display_name: Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2902630Z   artifact_name: Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2902983Z   zmk_revision: main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.2903199Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3401047Z No Kconfig output
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3455444Z ##[group]Run if [ -f "/tmp/tmp.K5iHR7CtYB/zephyr/zephyr.dts" ]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3456237Z [36;1mif [ -f "/tmp/tmp.K5iHR7CtYB/zephyr/zephyr.dts" ][0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3456578Z [36;1mthen[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3456844Z [36;1m  cat "/tmp/tmp.K5iHR7CtYB/zephyr/zephyr.dts"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3457249Z [36;1melif [ -f "/tmp/tmp.K5iHR7CtYB/zephyr/zephyr.dts.pre" ][0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3457612Z [36;1mthen[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3457893Z [36;1m  cat -s "/tmp/tmp.K5iHR7CtYB/zephyr/zephyr.dts.pre"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3458214Z [36;1melse[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3458425Z [36;1m  echo "No Devicetree output"[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3458690Z [36;1mfi[0m
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3458941Z shell: sh -e {0}
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3459139Z env:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3459340Z   build_dir: /tmp/tmp.K5iHR7CtYB
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3459597Z   base_dir: /tmp/zmk-config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3459843Z   zephyr_version: 4.1.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3460121Z   extra_west_args: -S "studio-rpc-usb-uart"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3460686Z   extra_cmake_args: -DSHIELD="Pyuron_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-Pyuron/zmk-config-Pyuron'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3461298Z   display_name: Pyuron_R rgbled_adapter - xiao_ble/nrf52840/zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3461723Z   artifact_name: Pyuron_R rgbled_adapter-xiao_ble_nrf52840_zmk-zmk
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3462070Z   zmk_revision: main
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3462580Z ##[endgroup]
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.3944656Z No Devicetree output
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.4068337Z Post job cleanup.
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.4076805Z ##[command]/usr/bin/docker exec  6270d347cac27e6c6f11cd7305d3165114acad50cd8ce630ed4e8c5195d2e6b5 sh -c "cat /etc/*release | grep ^ID"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.5863814Z [command]/usr/bin/git version
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.5899965Z git version 2.43.0
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.5945904Z Temporarily overriding HOME='/__w/_temp/7d45a5df-f341-4ce1-87d2-b10eb76b33a1' before making global git config changes
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.5946931Z Adding repository directory to the temporary git global config as a safe directory
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.5950894Z [command]/usr/bin/git config --global --add safe.directory /__w/zmk-config-Pyuron/zmk-config-Pyuron
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.5979624Z Removing SSH command configuration
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.5984316Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6019382Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6241954Z Removing HTTP extra header
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6247139Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6279821Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6506778Z Removing includeIf entries pointing to credentials config files
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6512174Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6533992Z includeif.gitdir:/__w/zmk-config-Pyuron/zmk-config-Pyuron/.git.path
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6534947Z includeif.gitdir:/__w/zmk-config-Pyuron/zmk-config-Pyuron/.git/worktrees/*.path
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6535454Z includeif.gitdir:/github/workspace/.git.path
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6536422Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6542851Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/__w/zmk-config-Pyuron/zmk-config-Pyuron/.git.path
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6562685Z /__w/_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6572684Z [command]/usr/bin/git config --local --unset includeif.gitdir:/__w/zmk-config-Pyuron/zmk-config-Pyuron/.git.path /__w/_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6639185Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/__w/zmk-config-Pyuron/zmk-config-Pyuron/.git/worktrees/*.path
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6659519Z /__w/_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6677526Z [command]/usr/bin/git config --local --unset includeif.gitdir:/__w/zmk-config-Pyuron/zmk-config-Pyuron/.git/worktrees/*.path /__w/_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6704020Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6725832Z /github/runner_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6735160Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6767901Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6789248Z /github/runner_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6797216Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.6827762Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.7040889Z Removing credentials config '/__w/_temp/git-credentials-e9fa925b-469f-4e21-b561-9c37d12039dc.config'
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.7183614Z Stop and remove container: 7b70124fb9be49a9bbb91d45c562fbe1_zmkfirmwarezmkbuildarmstable_0b2753
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:52.7188489Z ##[command]/usr/bin/docker rm --force 6270d347cac27e6c6f11cd7305d3165114acad50cd8ce630ed4e8c5195d2e6b5
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:58.8790409Z 6270d347cac27e6c6f11cd7305d3165114acad50cd8ce630ed4e8c5195d2e6b5
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:58.8822167Z Remove container network: github_network_9e24ec5c5f6c454a8a4b53e3c0852dbb
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:58.8826828Z ##[command]/usr/bin/docker network rm github_network_9e24ec5c5f6c454a8a4b53e3c0852dbb
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:58.9711460Z github_network_9e24ec5c5f6c454a8a4b53e3c0852dbb
+build / Build (xiao_ble/nrf52840/zmk, Pyuron_R rgbled_adapter, studio-rpc-usb-uart)	UNKNOWN STEP	2026-06-10T01:29:58.9771545Z Cleaning up orphan processes

@@ -1,8 +1,11 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include "Pyuron.dtsi"
+// NOTE: keys.h must be included AFTER Pyuron.dtsi. Pyuron.dtsi pulls in the
+// matrix-transform RC(row,col) macro; keys.h's RC(code) modifier must be the
+// last definition so the keymap's RC(TAB) resolves to right-control (1 arg).
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <input/processors/zmk-input-processor-keybind.dtsi>
-#include "Pyuron.dtsi"
 
 &default_transform {
     col-offset = <6>;
