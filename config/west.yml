@@ -28,8 +28,10 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
+    # 自前fork: tick/wait-ms 等のパラメータをRAM化(挙動は同一)。
+    # 段2でカスタムStudio RPCによるライブ調整を載せる。
     - name: zmk-input-processor-keybind
-      remote: zettaface
-      revision: main
+      remote: yuitumunii
+      revision: live-params
   self:
     path: config
