@@ -28,10 +28,11 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
-    # 自前fork: tick/wait-ms 等のパラメータをRAM化(挙動は同一)。
-    # 段2でカスタムStudio RPCによるライブ調整を載せる。
+    # 自前fork: tick/wait-ms 等をRAM化 + カスタムStudio RPC(pyuron_gesture)で
+    # ジェスチャー感度をライブ調整(焼かずに変更)。要 custom-studio-protocol 土台 +
+    # conf の CONFIG_ZMK_INPUT_PROCESSOR_KEYBIND_STUDIO_RPC=y。
     - name: zmk-input-processor-keybind
       remote: yuitumunii
-      revision: live-params
+      revision: live-rpc
   self:
     path: config
