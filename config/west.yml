@@ -33,6 +33,6 @@ manifest:
     # conf の CONFIG_ZMK_INPUT_PROCESSOR_KEYBIND_STUDIO_RPC=y。
     - name: zmk-input-processor-keybind
       remote: yuitumunii
-      revision: live-rpc
+      revision: ec21ae0
   self:
     path: config
