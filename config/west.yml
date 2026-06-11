@@ -13,12 +13,14 @@ manifest:
     - name: yuitumunii
       url-base: https://github.com/yuitumunii
   projects:
-    # 自前fork: 最新本家ZMK + 1行修正(filter_with_input_config が
-    # レイヤーオーバーライドのSTOPを尊重 → トラックボールのカーソル漏れ解消)。
-    # 将来ZMK更新時はこのbranchに本家を取り込み直し1行を再適用する。
+    # 自前fork: cormoran custom-studio-protocol ベース + Pyuronの1行修正
+    # (filter_with_input_config がレイヤーオーバーライドのSTOPを尊重 →
+    #  トラックボールのカーソル漏れ解消)。custom-studio-protocol はカスタム
+    #  Studio RPC サブシステム(ジェスチャーのライブ調整)の土台。
+    #  ※従来の pyuron-input-stop-fix は本家main+1行修正のみ(カスタムRPC無し)。
     - name: zmk
       remote: yuitumunii
-      revision: pyuron-input-stop-fix
+      revision: pyuron+custom-studio
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
