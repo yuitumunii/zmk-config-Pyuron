@@ -17,10 +17,11 @@ manifest:
     #   - Pyuron 1行修正(filter_with_input_config STOP尊重)
     #   - hold-tap(&mt/&lt) timing RAM化 + pyuron_timing RPC (④Timing)
     #   - AutoMouse Layer config RAM化 + pyuron_aml RPC (①AML)
+    #   - split CPI forward (左右同時CPI調整)
     # 要conf: CONFIG_PYURON_TIMING_STUDIO_RPC=y / CONFIG_ZMK_INPUT_PROCESSOR_TEMP_LAYER_STUDIO_RPC=y
     - name: zmk
       remote: yuitumunii
-      revision: pyuron+custom-studio+aml+timing
+      revision: pyuron+custom-studio+all-rpc
       import: app/west.yml
     # 自前fork: pyuron_cpi カスタムRPC追加(CPI/DPIをライブ調整) (③CPI)
     # 要conf: CONFIG_PMW3610_ALT_STUDIO_RPC_CPI=y
