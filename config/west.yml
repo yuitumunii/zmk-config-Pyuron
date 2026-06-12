@@ -23,8 +23,8 @@ manifest:
       revision: pyuron+custom-studio
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: main
+      remote: yuitumunii
+      revision: live-cpi
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
