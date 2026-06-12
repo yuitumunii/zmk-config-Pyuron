@@ -20,7 +20,7 @@ manifest:
     #  ※従来の pyuron-input-stop-fix は本家main+1行修正のみ(カスタムRPC無し)。
     - name: zmk
       remote: yuitumunii
-      revision: pyuron+custom-studio
+      revision: pyuron+custom-studio+split-cpi
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: yuitumunii
