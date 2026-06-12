@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: zmkfirmware 
+    - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: MeowCatpawkittie
       url-base: https://github.com/MeowCatpawkittie
     - name: caksoylar
-      url-base: https://github.com/caksoylar  
+      url-base: https://github.com/caksoylar
     - name: badjeff
       url-base: https://github.com/badjeff
     - name: zettaface
@@ -13,21 +13,28 @@ manifest:
     - name: yuitumunii
       url-base: https://github.com/yuitumunii
   projects:
-    # 自前fork: 最新本家ZMK + 1行修正(filter_with_input_config が
-    # レイヤーオーバーライドのSTOPを尊重 → トラックボールのカーソル漏れ解消)。
-    # 将来ZMK更新時はこのbranchに本家を取り込み直し1行を再適用する。
+    # 全部入りfork: cormoran custom-studio-protocol ベース +
+    #   - Pyuron 1行修正(filter_with_input_config STOP尊重)
+    #   - hold-tap(&mt/&lt) timing RAM化 + pyuron_timing RPC (④Timing)
+    #   - AutoMouse Layer config RAM化 + pyuron_aml RPC (①AML)
+    # 要conf: CONFIG_PYURON_TIMING_STUDIO_RPC=y / CONFIG_ZMK_INPUT_PROCESSOR_TEMP_LAYER_STUDIO_RPC=y
     - name: zmk
       remote: yuitumunii
-      revision: pyuron-input-stop-fix
+      revision: pyuron+custom-studio+aml+timing
       import: app/west.yml
+    # 自前fork: pyuron_cpi カスタムRPC追加(CPI/DPIをライブ調整) (③CPI)
+    # 要conf: CONFIG_PMW3610_ALT_STUDIO_RPC_CPI=y
     - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: main
+      remote: yuitumunii
+      revision: live-cpi
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
+    # 自前fork: ジェスチャー感度RAM化+pyuron_gesture RPC (ジェスチャー感度) +
+    #           方向ごとbinding差し替え+NVS永続 (②ジェスチャー割当)
+    # 要conf: CONFIG_ZMK_INPUT_PROCESSOR_KEYBIND_STUDIO_RPC=y
     - name: zmk-input-processor-keybind
-      remote: zettaface
-      revision: main
+      remote: yuitumunii
+      revision: 57ce51b
   self:
     path: config
