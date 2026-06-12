@@ -164,7 +164,7 @@
 
         // GEST3 (8): 3-finger style — desktop / Mission Control
         layer_8 {
-            label = "GEST3";
+            label = "画面切替";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -176,7 +176,7 @@
         // GEST_PAGE (9): O-hold — browser page (left/right) + tab (up/down).
         // Flag layer only; the right trackball is handled by zip_keybind_pagenav.
         layer_9 {
-            label = "GPAGE";
+            label = "ページ/タブ";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
