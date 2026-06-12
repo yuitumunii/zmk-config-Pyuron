@@ -13,12 +13,12 @@ manifest:
     - name: yuitumunii
       url-base: https://github.com/yuitumunii
   projects:
-    # 自前fork: 最新本家ZMK + 1行修正(filter_with_input_config が
-    # レイヤーオーバーライドのSTOPを尊重 → トラックボールのカーソル漏れ解消)。
-    # 将来ZMK更新時はこのbranchに本家を取り込み直し1行を再適用する。
+    # 自前fork: pyuron-aml-rpc = pyuron-input-stop-fix + AML Studio RPC実装
+    # (input_processor_temp_layer RAM化 + pyuron_aml カスタムサブシステム)
+    # 将来ZMK更新時は pyuron-input-stop-fix を取り込み直し、このbranchに rebase する。
     - name: zmk
       remote: yuitumunii
-      revision: pyuron-input-stop-fix
+      revision: pyuron-aml-rpc
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
