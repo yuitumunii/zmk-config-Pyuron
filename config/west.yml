@@ -32,10 +32,12 @@ manifest:
       remote: caksoylar
       revision: main
     # 自前fork: ジェスチャー感度RAM化+pyuron_gesture RPC (ジェスチャー感度) +
-    #           方向ごとbinding差し替え+NVS永続 (②ジェスチャー割当)
+    #           方向ごとbinding差し替え+NVS永続 (②ジェスチャー割当) +
+    #           動的レイヤー別ジェスチャープロセッサ (③動的レイヤー)
     # 要conf: CONFIG_ZMK_INPUT_PROCESSOR_KEYBIND_STUDIO_RPC=y
+    #         CONFIG_ZMK_INPUT_PROCESSOR_KEYBIND_DYNAMIC=y は DT_HAS_* 自動
     - name: zmk-input-processor-keybind
       remote: yuitumunii
-      revision: 57ce51b
+      revision: dynamic-gesture
   self:
     path: config
